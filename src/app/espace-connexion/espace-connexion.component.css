@@ -1,0 +1,15 @@
+.container{
+    text-align: center;
+}
+
+.nomLabel{
+    font-weight: bold;
+}
+
+input{
+    margin-top: 1%;
+}
+
+button{
+    margin-bottom: 0.5%;
+}

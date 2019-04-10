@@ -1,0 +1,36 @@
+<form class="container" (ngSubmit)="myForm.valid && onSubmit()" #myForm="ngForm">
+
+  <div class="row">
+
+    <div>
+      <label class="nomLabel" for="user">Username</label><br/>
+      <input name="user" type="text" [(ngModel)]="model.user" #user="ngModel" required maxlength="25" required
+        minlength="4">
+    </div>
+    <br/>
+    <div>
+      <label class="nomLabel" for="contact">Email</label><br/>
+      <input name="contact" type="email" [(ngModel)]="model.contact" #contact="ngModel" required email>
+    </div>
+    <br/>
+    <div>
+      <label class="nomLabel" for="password">PassWord</label><br/>
+      <input name="password" type="password" [(ngModel)]="model.password" required>
+    </div>
+    <div *ngIf="user.errors && myForm.submitted">
+        <span *ngIf="user.required">Characters is required</span>
+        <span *ngIf="user.errors.minlength">Characters min is 4</span>
+        <span *ngIf="user.errors.maxlength">Characters max is 25.</span>
+      </div>
+    <div *ngIf="contact.errors && myForm.submitted">
+        <span *ngIf="contact.errors.required">Email is required</span>
+        <span *ngIf="contact.errors.email">Invalid Email</span>
+      </div>
+    <br/>
+    <button type="reset">Reset</button>
+    <br/>
+    <button type="submit">Connexion</button>
+    <br/>
+    <button type="submit">Create an account</button>
+  </div>
+</form>
