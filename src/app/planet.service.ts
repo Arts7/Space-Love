@@ -45,45 +45,6 @@ export class PlanetService {
               console.log("error");
             }
           }
-          
-          /*
-          current = paramData[0];
-          planet.id = 0;
-          planet.hostname = current.pl_hostname;
-          planet.letter = current.pl_letter;
-          planet.name = current.pl_name;
-          planet.orbitalPeriode = current.pl_orbper;
-          planet.radiusJupiter = current.pl_radj;
-          planet.massJupiter = current.pl_bmassj;
-          planet.density = current.pl_dens;
-          planet.rightAscension = current.ra;
-          planet.declination = current.dec;
-          planet.distanceFromOurSolar = current.st_dist;
-          planet.temperature = current.st_teff;
-          planet.stellarMass = current.st_mass;
-          planet.stellarRadius = current.st_rad;
-          planet.lastUpdate = current.rowupdate;
-          planetsList.push(planet);
-
-          current = paramData[1];
-          planet.id = 1;
-          planet.hostname = current.pl_hostname;
-          planet.letter = current.pl_letter;
-          planet.name = current.pl_name;
-          planet.orbitalPeriode = current.pl_orbper;
-          planet.radiusJupiter = current.pl_radj;
-          planet.massJupiter = current.pl_bmassj;
-          planet.density = current.pl_dens;
-          planet.rightAscension = current.ra;
-          planet.declination = current.dec;
-          planet.distanceFromOurSolar = current.st_dist;
-          planet.temperature = current.st_teff;
-          planet.stellarMass = current.st_mass;
-          planet.stellarRadius = current.st_rad;
-          planet.lastUpdate = current.rowupdate;
-          planetsList.push(planet);
-          */
-
           return planetsList;
         }
       )
