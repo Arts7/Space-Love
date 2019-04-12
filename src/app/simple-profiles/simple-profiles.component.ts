@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PersonProfilesService } from '../person-profiles.service';
+import { Person } from '../person';
 
 @Component({
   selector: 'app-simple-profiles',
@@ -7,7 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SimpleProfilesComponent implements OnInit {
 
-  constructor() { }
+  public profils:Person[];
+  //public picturesPath:string="../assets/img/";
+
+  constructor(private myService:PersonProfilesService) {
+    this.profils=[];
+
+    this.myService.getProfils().subscribe(
+      (param_profils:Person[]) => {
+        this.profils = param_profils;
+      }
+    )
+   }
 
   ngOnInit() {
   }

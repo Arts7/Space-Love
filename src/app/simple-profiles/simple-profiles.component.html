@@ -1,3 +1,14 @@
-<p>
-  simple-profiles works!
-</p>
+<ul>
+  <li *ngFor="let person of profils">
+    <p>
+      {{person.id}}
+    </p>
+    <p>
+      {{person.name}}
+    </p>
+    <p>
+      {{person.sexe}}
+    </p>
+    <img [src]="picturesPath + person.photos[0]">
+  </li>
+</ul>
