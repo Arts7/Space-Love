@@ -18,8 +18,11 @@ import { ROUTES } from './app.routes';
 import { LogoComponent } from './logo/logo.component';
 import { DescriptionsComponent } from './descriptions/descriptions.component';
 import { EspaceConnexionComponent } from './espace-connexion/espace-connexion.component';
+import { FlagComponent } from './flag/flag.component';
+import { WrapComponent } from './wrap/wrap.component';
 import { EspaceRechercheComponent } from './espace-recherche/espace-recherche.component';
 import { PageAccComponent } from './page-acc/page-acc.component';
+
 
 
 @NgModule({
@@ -35,6 +38,9 @@ import { PageAccComponent } from './page-acc/page-acc.component';
     PlanetComponent,
     PlanetSystemComponent,
     EspaceConnexionComponent,
+    spaceMap,
+    FlagComponent,
+    WrapComponent,
     EspaceRechercheComponent,
     PageAccComponent
   ],

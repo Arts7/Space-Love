@@ -13,12 +13,13 @@ export class PlanetService {
 
   public getPlanets(): Observable<any> {
     return this.myService.get("assets/JsonFiles/nph-nstedAPI.json").pipe(
+    // return this.myService.get("https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?&table=exoplanets&format=JSON&where=pl_kepflag=1").pipe(
       map(
         (paramData: any[]) => {
           let current = null;
           let planetsList: Planet[] = [];
 
-          
+
           for (let i: number = 0; i < paramData.length; i++) {
             current = paramData[i];
 
@@ -26,7 +27,7 @@ export class PlanetService {
               let planet: Planet = new Planet();
               planet.id = i;
               planet.hostname = current.pl_hostname;
-              planet.letter = current.pl_letter; 
+              planet.letter = current.pl_letter;
               planet.name = current.pl_name;
               planet.orbitalPeriode = current.pl_orbper;
               planet.radiusJupiter = current.pl_radj;
