@@ -8,13 +8,17 @@ import { PlanetComponent } from './planet/planet.component';
 import { PlanetSystemComponent } from './planet-system/planet-system.component';
 import { AppComponent } from './app.component';
 import { EspaceConnexionComponent } from './espace-connexion/espace-connexion.component';
+import { FlagComponent } from './flag/flag.component';
+import { WrapComponent } from './wrap/wrap.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlanetComponent,
     PlanetSystemComponent,
-    EspaceConnexionComponent
+    EspaceConnexionComponent,
+    FlagComponent,
+    WrapComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { OrbitControls } from "three-orbitcontrols-ts";
-import { Injectable, Input, OnInit } from '@angular/core';
+import { Injectable, Input } from '@angular/core';
 import { PlanetService } from "./planet.service";
 import { PlanetComponent } from "./planet/planet.component";
 import { Planet } from "./planet";
@@ -9,6 +9,8 @@ import { Planet } from "./planet";
   providedIn: 'root'
 })
 export class Create3dPlanetsService {
+
+  @Input() public movePlanets: boolean = true;
 
   protected canvas: HTMLCanvasElement;
   protected renderer: THREE.WebGLRenderer;
@@ -130,7 +132,7 @@ export class Create3dPlanetsService {
     this.planete01Pivot.add(this.planetes[1]);
     this.planete01Object = new THREE.Object3D();
     this.planete01Object.add(this.planete01Pivot);
-    this.planete01Object.rotateY(180 * Math.PI / 180);
+    this.planete01Object.rotateY(25 * Math.PI / 180);
     this.planete01Object.rotateZ(23 * Math.PI / 180);
     this.planetes[0].add(this.planete01Object);
 
@@ -138,47 +140,67 @@ export class Create3dPlanetsService {
     this.planete02Pivot.add(this.planetes[2]);
     this.planete02Object = new THREE.Object3D();
     this.planete02Object.add(this.planete02Pivot);
-    // this.planete02Object.rotateY(180 * Math.PI /180);
-    this.planete02Object.rotateZ(5 * Math.PI / 180);
+    this.planete02Object.rotateY(5 * Math.PI /180);
+    this.planete02Object.rotateZ(0 * Math.PI / 180);
     this.planete02Object.translateX(35);
     this.planetes[0].add(this.planete02Object);
 
     this.planete03Pivot = new THREE.Group();
-    this.planetes[0].add(this.planete03Pivot);
+    this.planete03Pivot.add(this.planetes[3]);
     this.planete03Object = new THREE.Object3D();
     this.planete03Object.add(this.planete03Pivot);
-    this.planete03Object.rotateY(20 * Math.PI / 180);
-    // this.planete03Object.rotateZ(0 * Math.PI /180);
-    this.planete03Object.translateX(35);
+    this.planete03Object.rotateY(0 * Math.PI / 180);
+    this.planete03Object.rotateZ(-10 * Math.PI / 180);
     this.planetes[0].add(this.planete03Object);
 
 
     this.planete04Pivot = new THREE.Group();
-    this.planetes[0].add(this.planete04Pivot);
+    this.planete04Pivot.add(this.planetes[4]);
     this.planete04Object = new THREE.Object3D();
     this.planete04Object.add(this.planete04Pivot);
-    this.planete04Object.rotateY(45 * Math.PI / 180);
-    this.planete04Object.rotateZ(3 * Math.PI / 180);
-    this.planete04Object.translateX(35);
+    this.planete04Object.rotateY(90 * Math.PI / 180);
+    this.planete04Object.rotateZ(0 * Math.PI / 180);
+    this.planete04Object.translateX(-20);
     this.planetes[0].add(this.planete04Object);
+   
 
     this.planete05Pivot = new THREE.Group();
-    this.planetes[0].add(this.planete05Pivot);
     this.planete05Pivot.add(this.planetes[5]);
+    this.planete05Object = new THREE.Object3D();
+    this.planete05Object.add(this.planete05Pivot);
+    this.planete05Object.rotateY(60 * Math.PI / 180);
+    this.planete05Object.rotateZ(-23 * Math.PI / 180);
+    // this.planete05Object.translateX(20);
+    this.planetes[0].add(this.planete05Object);
 
     this.planete06Pivot = new THREE.Group();
-    this.planetes[0].add(this.planete06Pivot);
     this.planete06Pivot.add(this.planetes[6]);
+    this.planete06Object = new THREE.Object3D();
+    this.planete06Object.add(this.planete06Pivot);
+    this.planete06Object.rotateY(25 * Math.PI / 180);
+    this.planete06Object.rotateZ(23 * Math.PI / 180);
+    this.planete06Object.translateX(40);
+    this.planetes[0].add(this.planete06Object);
 
     this.planete07Pivot = new THREE.Group();
-    this.planetes[0].add(this.planete07Pivot);
     this.planete07Pivot.add(this.planetes[7]);
+    this.planete07Object = new THREE.Object3D();
+    this.planete07Object.add(this.planete07Pivot);
+    this.planete07Object.rotateY(0 * Math.PI / 180);
+    this.planete07Object.rotateZ(3 * Math.PI / 180);
+    this.planete07Object.translateX(20);
+    this.planetes[0].add(this.planete07Object);
 
     this.planete08Pivot = new THREE.Group();
-    this.planetes[0].add(this.planete08Pivot);
     this.planete08Pivot.add(this.planetes[8]);
+    this.planete08Object = new THREE.Object3D();
+    this.planete08Object.add(this.planete08Pivot);
+    this.planete08Object.rotateY(-40 * Math.PI / 180);
+    this.planete08Object.rotateZ(-25 * Math.PI / 180);
+    // this.planete08Object.translateX(20);
+    this.planetes[0].add(this.planete08Object);
 
-    
+
 
 
     // this.createPlanetWithoutBump(0, (this.listOfPlanets[0].radiusJupiter)*10, 32, this.texturesArray[0].texture, 0, 0, 0);
@@ -281,14 +303,14 @@ export class Create3dPlanetsService {
   }
 
   addLineShape(shape: THREE.Shape, color, x: number, y: number, z: number, rx: number, ry: number, rz: number, s: number) {
-  
+
     // lines
     shape.autoClose = true;
     var points = shape.getPoints();
     var spacedPoints = shape.getSpacedPoints(50);
     var geometryPoints = new THREE.BufferGeometry().setFromPoints(points);
     var geometrySpacedPoints = new THREE.BufferGeometry().setFromPoints(spacedPoints);
-  
+
     // solid line
     var line = new THREE.Line(geometryPoints, new THREE.LineBasicMaterial({ color: color }));
     line.position.set(x, y, z);
@@ -335,24 +357,34 @@ export class Create3dPlanetsService {
     });
 
     //animation
-
-    // this.planetes[0].rotation.y += 0.05;
     this.planetes[1].rotation.y += 0.02;
-    this.planete01Pivot.rotation.y += 0.005;
     this.planetes[2].rotation.y -= 0.05;
-    this.planete02Pivot.rotation.y += 0.0025;
     this.planetes[3].rotation.y += 0.01;
-    this.planete03Pivot.rotation.y -= 0.005;
     this.planetes[4].rotation.y -= 0.025;
-    this.planete04Pivot.rotation.y -= 0.0035;
     this.planetes[5].rotation.y += 0.05;
-    this.planete05Pivot.rotation.y += 0.0015;
     this.planetes[6].rotation.y -= 0.35;
-    this.planete06Pivot.rotation.y -= 0.002;
     this.planetes[7].rotation.y += 0.05;
-    this.planete07Pivot.rotation.y += 0.001;
     this.planetes[8].rotation.y += 0.04;
-    this.planete08Pivot.rotation.y -= 0.0005;
+
+    if (this.movePlanets) {
+      this.planetes[1].rotation.y += 0.02;
+      this.planete01Pivot.rotation.y += 0.005;
+      this.planetes[2].rotation.y -= 0.05;
+      this.planete02Pivot.rotation.y += 0.0025;
+      this.planetes[3].rotation.y += 0.01;
+      this.planete03Pivot.rotation.y -= 0.005;
+      this.planetes[4].rotation.y -= 0.025;
+      this.planete04Pivot.rotation.y -= 0.0035;
+      this.planetes[5].rotation.y += 0.05;
+      this.planete05Pivot.rotation.y += 0.0015;
+      this.planetes[6].rotation.y -= 0.35;
+      this.planete06Pivot.rotation.y -= 0.002;
+      this.planetes[7].rotation.y += 0.05;
+      this.planete07Pivot.rotation.y += 0.001;
+      this.planetes[8].rotation.y += 0.04;
+      this.planete08Pivot.rotation.y -= 0.0005;
+    }
+
 
     this.renderer.render(this.scene, this.camera);
   }
