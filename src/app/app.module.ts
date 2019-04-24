@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { YourProfileComponent } from './your-profile/your-profile.component';
 import {ROUTES} from './app.routes';
 import { LogoComponent } from './logo/logo.component';
+import { DescriptionsComponent } from './descriptions/descriptions.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LogoComponent } from './logo/logo.component';
     SpaceMapComponent,
     HomeComponent,
     YourProfileComponent,
-    LogoComponent
+    LogoComponent,
+    DescriptionsComponent
   ],
   imports: [
     BrowserModule,
