@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from "@angular/forms";
 
 import { PlanetComponent } from './planet/planet.component';
 import { PlanetSystemComponent } from './planet-system/planet-system.component';
@@ -17,6 +18,8 @@ import { ROUTES } from './app.routes';
 import { LogoComponent } from './logo/logo.component';
 import { DescriptionsComponent } from './descriptions/descriptions.component';
 import { EspaceConnexionComponent } from './espace-connexion/espace-connexion.component';
+import { EspaceRechercheComponent } from './espace-recherche/espace-recherche.component';
+import { PageAccComponent } from './page-acc/page-acc.component';
 
 
 @NgModule({
@@ -31,13 +34,16 @@ import { EspaceConnexionComponent } from './espace-connexion/espace-connexion.co
     DescriptionsComponent,
     PlanetComponent,
     PlanetSystemComponent,
-    EspaceConnexionComponent
+    EspaceConnexionComponent,
+    EspaceRechercheComponent,
+    PageAccComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(ROUTES),
+    ReactiveFormsModule,
     FormsModule,
+    RouterModule.forRoot(ROUTES),
     HttpClientModule,
   ],
   
