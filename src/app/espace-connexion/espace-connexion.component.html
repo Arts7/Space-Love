@@ -1,36 +1,48 @@
-<form class="container" (ngSubmit)="myForm.valid && onSubmit()" #myForm="ngForm">
+<h1>Log-in / Sign-up</h1>
 
-  <div class="row">
+<div class="login">
+  <form (ngSubmit)="myForm.valid && onSubmit()" #myForm="ngForm">
 
     <div>
-      <label class="nomLabel" for="user">Username</label><br/>
-      <input name="user" type="text" [(ngModel)]="model.user" #user="ngModel" required maxlength="25" required
-        minlength="4">
-    </div>
-    <br/>
-    <div>
-      <label class="nomLabel" for="contact">Email</label><br/>
-      <input name="contact" type="email" [(ngModel)]="model.contact" #contact="ngModel" required email>
-    </div>
-    <br/>
-    <div>
-      <label class="nomLabel" for="password">PassWord</label><br/>
-      <input name="password" type="password" [(ngModel)]="model.password" required>
-    </div>
-    <div *ngIf="user.errors && myForm.submitted">
+
+      <div>
+        <label class="nomLabel" for="user">Username</label><br />
+        <input class="champ" name="user" type="text" [(ngModel)]="model.user" #user="ngModel" required maxlength="25" required
+          minlength="4">
+      </div>
+
+      <div>
+        <label class="nomLabel" for="contact">Email</label><br />
+        <input class="champ" name="contact" type="email" [(ngModel)]="model.contact" #contact="ngModel" required email>
+      </div>
+
+      <div>
+        <label class="nomLabel" for="password">PassWord</label><br />
+        <input class="champ" name="password" type="password" [(ngModel)]="model.password" required>
+      </div>
+      <div *ngIf="user.errors && myForm.submitted">
         <span *ngIf="user.required">Characters is required</span>
         <span *ngIf="user.errors.minlength">Characters min is 4</span>
         <span *ngIf="user.errors.maxlength">Characters max is 25.</span>
       </div>
-    <div *ngIf="contact.errors && myForm.submitted">
+      <div *ngIf="contact.errors && myForm.submitted">
         <span *ngIf="contact.errors.required">Email is required</span>
         <span *ngIf="contact.errors.email">Invalid Email</span>
       </div>
-    <br/>
-    <button type="reset">Reset</button>
-    <br/>
-    <button type="submit">Connexion</button>
-    <br/>
-    <button type="submit">Create an account</button>
-  </div>
-</form>
+      <div class="form-check">
+        <input class="champ" type="checkbox" class="form-check-input" id="dropdownCheck2">
+        <label class="form-check-label remember" for="dropdownCheck2">
+          Remember me
+        </label>
+      </div>
+      <div class="button">
+
+          <button type="reset" class="btn btn-secondary">Reset</button>
+        <br/>
+        <button type="submit" class="btn btn-secondary">Connexion</button>
+        <br/>
+        <button type="submit" class="btn btn-secondary">Create an account</button>
+      </div>
+    </div>
+  </form>
+</div>
