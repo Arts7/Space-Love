@@ -5,6 +5,11 @@
 }
 
 @font-face {
+    font-family: "Disko";
+    src: url("../src/assets/fonts/Disko_OT.otf") format("opentype");
+}
+
+@font-face {
     font-family: "Futura-Condensed-Light";
     src: url("../src/assets/fonts/Futura-CondensedLight.otf") format("opentype");
 }
