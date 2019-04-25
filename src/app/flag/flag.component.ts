@@ -1,6 +1,9 @@
 import { Component, OnInit, OnChanges, Input, SimpleChanges, ComponentFactoryResolver } from '@angular/core';
 import { Planet } from "../planet";
 import { PlanetService } from "../planet.service";
+import { critereList } from "../critere";
+import { PersonProfilesService } from '../person-profiles.service';
+import { Person } from '../person';
 
 
 @Component({
@@ -14,10 +17,17 @@ export class FlagComponent implements OnInit {
 
   public planets: Planet[] = [];
   public planet: Planet = new Planet();
+  public searchCriteria: any[];
+  public profils:Person[];
+  // public picturesPath:string="../assets/img/";
+  public numberProfilsMatch: number;
 
 
-  constructor(private myService: PlanetService) {
+  constructor(private myService: PlanetService, private myProfilsService:PersonProfilesService) {
     this.planet = null;
+    this.profils = [];
+    this.searchCriteria = critereList;
+    this.numberProfilsMatch = 0;
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -39,5 +49,12 @@ export class FlagComponent implements OnInit {
         this.planet = this.planets[this.planetID];
       }
     );
+
+    this.myProfilsService.getProfils().subscribe(
+      (param_profils:Person[]) => {
+        this.profils = param_profils;
+      }
+    );
+
   }
 }
