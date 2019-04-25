@@ -10,3 +10,4 @@ export class critere {
     this.Skins,
 ]};
 }
+export const critereList:critere [] = [];

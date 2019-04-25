@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormArray } from "@angular/forms";
-import { critere } from '../critere'
+import { critereList } from '../critere';
+
 
 
 @Component({
@@ -12,7 +13,7 @@ export class EspaceRechercheComponent implements OnInit {
 
   private displayDiagnostic = false;
   
-  critereList:critere [] = [];
+  
   critereForm = this.fb.group({
     Sexe: [""],
     nbEyes: [""],
@@ -37,8 +38,8 @@ export class EspaceRechercheComponent implements OnInit {
 
   onSubmit() {
     
-    this.critereList.push(this.critereForm.value); 
-    console.log(this.critereList);
+    critereList.push(this.critereForm.value); 
+    console.log(critereList);
   }
 
 }

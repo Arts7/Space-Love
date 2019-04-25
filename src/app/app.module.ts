@@ -38,7 +38,7 @@ import { PageAccComponent } from './page-acc/page-acc.component';
     PlanetComponent,
     PlanetSystemComponent,
     EspaceConnexionComponent,
-    spaceMap,
+    
     FlagComponent,
     WrapComponent,
     EspaceRechercheComponent,
