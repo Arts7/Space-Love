@@ -147,8 +147,8 @@ export class CreateOne3dPlanetService {
     // ajoute les commandes de l'orbite
     this.controls = new OrbitControls(this.camera);
     this.controls.target.set(0, 0, 0);
-    this.controls.enablePan = true;
-    this.controls.enableZoom = true;
+    // this.controls.enablePan = true;
+    // this.controls.enableZoom = true;
     this.controls.update();
 
     // this.canvas.addEventListener("mousedown", this.onDocumentMouseDown, false);
