@@ -1,3 +1,30 @@
-<p>
-  descriptions works!
-</p>
+<body >
+  
+<div class="container border ">
+
+<div class= "page text-center">
+  
+<img class="border"[src]="picturesPath  + profils[ID].photos[1] ">
+
+<div class="elements">
+<p>Name : {{profils[ID].name}}</p>
+
+<p>Gender : {{profils[ID].sexe}}</p>
+
+<p>Eyes : {{profils[ID].nberEyes}}</p>
+
+<p>Skin : {{profils[ID].typeSkin}}</p>
+
+<p>Job : {{profils[ID].job}}</p>
+</div>
+</div>
+
+<div class= "descriptions1 offset-3 col-6 text-center center d-flex border ">
+  {{descriptionlist[ID]}}
+  </div>
+  
+</div>
+
+<button type="button" class="btn col-8 btn-primary btn-lg btn-block">SEND A MESSAGE</button>
+
+</body>
