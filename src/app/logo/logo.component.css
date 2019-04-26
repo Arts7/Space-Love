@@ -1,6 +1,7 @@
 .logo {
-    font-family: Disko;
+    font-family: 'Disko';
     font-size:500%;
+    color: black;
 }
 
 .coeur{
@@ -11,7 +12,7 @@
 .coeur1{
     height: 80px;
     width: 100px;
-    margin-left: 1%;
+    
 }
  
 @media (max-width: 425px){
