@@ -1,4 +1,4 @@
-<h1>Research</h1>
+<h3>Research</h3>
 <div class="critere">
 
   <form (ngSubmit)="myForm.valid && onSubmit()" [formGroup]="critereForm" #myForm="ngForm">
@@ -9,11 +9,11 @@
     </div>
 
     <div>
-      <label class="nomLabel" for="Sexe-critere">Sexe :<br />
+      <label class="nomLabel" for="Sexe-critere">Gender :<br />
         <select class="champ1" name="Sexe-critere" formControlName="Sexe">
-          <option value="Mâle">Mâle</option>
+          <option value="Mâle">Male</option>
           <option value="Female">Female</option>
-          <option value="Mixte">Mixte</option>
+          <option value="Mixte">Hermaphrodite</option>
         </select>
       </label>
     </div>
@@ -29,7 +29,7 @@
     <div>
       <label class="nomLabel" for="Skins-critere">Skins :<br />
         <select class="champ1" name="Skins-critere" formControlName="Skins">
-          <option value="Lisse">Lisse</option>
+          <option value="Lisse">Smooth</option>
           <option value="Reptile">Reptile</option>
           <option value="Fish">Fish</option>
         </select>

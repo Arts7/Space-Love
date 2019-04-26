@@ -14,7 +14,13 @@
     src: url("../src/assets/fonts/Futura-CondensedLight.otf") format("opentype");
 }
 
-h1, h2 {
+h1{
+    font-family: 'Disko';
+    font-size: 100%;
+    color: white;
+}
+
+h2 {
     font-family: "Casanova_Scotia", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;

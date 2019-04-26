@@ -1,13 +1,18 @@
-h1{
-    text-align: center;
-    text-decoration: bold;
-    margin-bottom: 5%;
-    color: white;
-    font-size: 500%;
+.logo{
+    margin-top: 3%;
+}
+
+.menu{
+    margin-top: 2%;
+    
 }
 
 .connexion{
-    margin-bottom: 12%;
+    margin-top: 2%;
+}
+
+.recherche{
+    margin-top: 2%;
 }
 
 
@@ -30,11 +35,15 @@ h1{
     border-width: 5px;
     border-color: white;
     border-radius: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
     height: 100vh;
+    
+    
 }
 @media screen and (min-width: 1050px){
     #blockpage{
-        width: 80%;
+        width: 100%;
     }
 }
 @media screen and (max-width: 1049px){
@@ -42,9 +51,11 @@ h1{
         width: 100%;
     }
 }
-body{
+.bodyacc{
     background-image: url("https://i.ytimg.com/vi/36e1XAT1TgI/maxresdefault.jpg");
     background-size: 100%;
+    background-attachment: fixed;
+    
     display: flex;
     justify-content: center;
 }
