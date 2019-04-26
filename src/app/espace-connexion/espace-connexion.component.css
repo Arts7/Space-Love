@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    font-size: 190%;
+    font-weight: bold;
+    color:white;
+}
+
+.login {
+    text-align: center;
+    background-color: rgb(241, 238, 238);
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(85, 12, 153);
+    border-radius: 10%;
+    margin-bottom: 21%;
+
+}
+
+.nomLabel {
+    font-weight: bold;
+    margin-top:7%;
+    font-size: 150%;
+}
+
+.button{
+    display: block;
+    margin-bottom: 3%;
+    padding: 5%;
+}
+button{
+    margin-bottom: 3%;
+    font-weight: bold;
+    font-size: 100%;
+    
+}
+
+.champ{
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    text-align: center;
+}
+
+.remember{
+    font-size: 130%;
+}
