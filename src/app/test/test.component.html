@@ -1,0 +1,16 @@
+<!--<div class='container'>
+	<div class='carouselContainer'></div>
+</div>-->
+
+<div class="container">
+	<div class="carousel" [ngStyle]="{'transform' : updateRotation === true ? rotationSlide() : 'none'}">
+	  <div class="item a">A</div>
+	  <div class="item b">B</div>
+	  <div class="item c">C</div>
+	  <div class="item d">D</div>
+	  <div class="item e">E</div>
+	  <div class="item f">F</div>
+	</div>
+  </div>
+  <div class="next" (click)="rotate('n')">Next</div>
+  <div class="prev"(click)="rotate('p')" >Prev</div>

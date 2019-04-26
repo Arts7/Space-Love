@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Casanova_Scotia";
+    src: url("../src/assets/fonts/Casanova_Scotia.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Futura-CondensedLight";
+    src: url("../src/assets/fonts/Futura-CondensedLight.otf") format("opentype");
+}
+h1 {
+    font-family: "Casanova_Scotia", Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;  
+    color: white;  
+    font-size: 3rem;
+}
+
+.profile {
+    font-family: "Futura-CondensedLight", Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5rem;
+}
