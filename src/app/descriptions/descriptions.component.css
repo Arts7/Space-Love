@@ -16,6 +16,8 @@ body{
     padding-bottom: 5%;
     border-radius: 5%;
     color: black;
+    background-color:	#FFF5EE;
+    opacity:0.6;
 }
 
 .page{
@@ -26,7 +28,13 @@ body{
 .elements{
     margin-top: 2%;
     color: black;
+    margin-left: 36%;
+    background-color:	#FFF5EE;
+    opacity:0.6;
     font-size:14pt;
+    width: 28%;
+    height: 5%;
+    position: center;
 }
 
 .container{
