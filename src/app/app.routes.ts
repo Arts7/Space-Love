@@ -4,15 +4,18 @@ import{HomeComponent} from './home/home.component';
 import{SpaceMapComponent} from './space-map/space-map.component';
 import{HelpComponent} from './help/help.component';
 import {PlanetComponent} from './planet/planet.component';
+import {PageAccComponent} from './page-acc/page-acc.component';
+import { DescriptionsComponent } from './descriptions/descriptions.component';
 
 
 
 const ROUTES: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
+  { path: '', component: PageAccComponent },
+  { path: 'page-acc', component: PageAccComponent },
   { path: 'planet', component: PlanetComponent },
   { path: 'your-profile', component: YourProfileComponent },
   { path: 'help', component: HelpComponent },
+  { path: 'description', component: DescriptionsComponent },
 
 ];
 
