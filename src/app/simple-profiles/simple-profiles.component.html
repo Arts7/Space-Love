@@ -37,19 +37,22 @@
   <div class="profile p-5">
     <div class="row justify-content-center">
       <div class="containerSlide">
-        <div *ngFor="let person of profils" class="carouselSlide" [ngStyle]="{'transform' : updateRotation === true ? rotationSlide() : 'none'}">
+        <div *ngFor="let person of profils">
           <div class="carouselSlide" [ngStyle]="{'transform' : updateRotation === true ? rotationSlide() : 'none'}">
             <div class="item {{person.name}}" style="width: 18rem;">
-               <div class="borderSlide"> 
-              <button (click)="createProfile('Profile')" type="button" class="btn btn-lg btn-block">Profile</button>
-              <img [src]="person.photos[0]" height="250" class="card-img-top" alt="photo du profil">
-              <p>Name : {{person.name}}</p>
-              <p>Sexe : {{person.sexe}}</p>
-              <p>Type skin : {{person.typeSkin}}</p>
-              <p>Number eyes : {{person.nberEyes}}</p>
-               </div> 
+              <div class="borderSlide">
+                <button (click)="createProfile('Profile')" type="button" class="btn btn-lg btn-block">Profile</button>
+                <img [src]="person.photos[0]" height="250" class="card-img-top" alt="photo du profil">
+                <p>Name : {{person.name}}</p>
+                <p>Sexe : {{person.sexe}}</p>
+                <p>Type skin : {{person.typeSkin}}</p>
+                <p>Number eyes : {{person.nberEyes}}</p>
+              </div>
             </div>
-            <!-- <div class="item {{person.name}}">
+          </div>
+        </div>
+      </div>
+      <!-- <div class="item {{person.name}}">
             <div class="item {{person.name}}" style="width: 18rem;">
               <div class="borderSlide">
                 <button (click)="createProfile('Profile')" type="button" class="btn btn-lg btn-block">Profile</button>
@@ -61,14 +64,6 @@
               </div> 
             </div>
           </div> -->
-          </div>
-        </div>
-
-
-
-
-      </div>
-
 
 
       <div class="next" (click)="rotate('n')">Next</div>
