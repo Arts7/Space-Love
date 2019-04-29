@@ -1,6 +1,6 @@
 <h1>Log-in / Sign-up</h1>
 
-<div class="login">
+<div class="login offset-4 col-4">
   <form (ngSubmit)="myForm.valid && onSubmit()" #myForm="ngForm">
 
     <div>
@@ -37,11 +37,11 @@
       </div>
       <div class="button">
 
-          <button type="reset" class="btn btn-secondary">Reset</button>
+          <button type="reset" class="btn p-2 mx-3">Reset</button>
         <br/>
-        <button type="submit" class="btn btn-secondary">Connexion</button>
+        <button type="submit" class="btn p-2 mx-3">Connexion</button>
         <br/>
-        <button type="submit" class="btn btn-secondary">Create an account</button>
+        <button type="submit" class="btn p-2 mx-3">Create an account</button>
       </div>
     </div>
   </form>
