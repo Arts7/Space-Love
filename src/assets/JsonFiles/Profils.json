@@ -30,5 +30,27 @@
     "job":"",
     "description":"",
     "photos":["../assets/img/Rperso_4-1.jpg"]
+},
+
+{
+    "id":4,
+    "name":"f+x",
+    "sexe":"male",
+    "nberEyes":2,
+    "typeSkin":"reptile",    
+    "job":"",
+    "description":"",
+    "photos":["Rperso_6-1.jpg"]
+},
+
+{
+    "id":5,
+    "name":"",
+    "sexe":"male",
+    "nberEyes":5,
+    "typeSkin":"",    
+    "job":"",
+    "description":"",
+    "photos":["Rperso_10-1.jpeg", "Rperso_10-2.jpg", "Rperso_10-3.jpg"]
 }
 ]

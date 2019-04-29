@@ -1,0 +1,27 @@
+.logo {
+    font-family: 'Disko';
+    font-size:500%;
+}
+
+.coeur{
+    height: 80px;
+    width: 100px;
+}
+
+.coeur1{
+    height: 80px;
+    width: 100px;
+    margin-left: 1%;
+}
+ 
+@media (max-width: 425px){
+.coeur {
+    display: none;
+  }
+}
+
+@media (max-width: 425px){
+.coeur1 {
+    display: none;
+    }
+}

@@ -1,0 +1,60 @@
+body{
+    background-attachment: fixed;
+    background-image: url("/assets/img/background.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+}
+
+.descriptions1 {
+    font-family: Futura;
+    font-size:14pt;
+    margin-top: 3%;
+    margin-bottom:3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 5%;
+    color: black;
+    background-color:	#FFF5EE;
+    opacity:0.6;
+}
+
+.page{
+    font-family: Futura;
+    margin-top: 3%;
+}
+
+.elements{
+    margin-top: 2%;
+    color: black;
+    margin-left: 36%;
+    background-color:	#FFF5EE;
+    opacity:0.6;
+    font-size:14pt;
+    width: 28%;
+    height: 5%;
+    position: center;
+}
+
+.container{
+    margin-top:2%;
+    margin-bottom:2%;
+    border-radius:3%;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+}
+
+.border{
+    border-radius:20px;
+}
+
+.btn{
+    margin-left:17%;
+    color: black;
+    opacity:0.7;
+    font-family: Futura;
+    font-size:14pt;
+    background-image: linear-gradient(135deg,purple, orange, yellow 60%, orange, purple);
+}
+
+
