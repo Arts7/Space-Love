@@ -10,4 +10,6 @@ export class critere {
     this.Skins,
 ]};
 }
-export const critereList:critere [] = [];
+export const critereList:critere [] = [
+    // {Sexe: "male", nbEyes: "2", Skins: "smooth"}
+];
