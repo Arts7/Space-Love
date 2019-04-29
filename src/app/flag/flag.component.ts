@@ -19,6 +19,7 @@ export class FlagComponent implements OnInit {
   public planet: Planet = new Planet();
   public searchList: any[];
   public profils: Person[];
+  public critereList = critereList;
   // public picturesPath:string="../assets/img/";
   public numberProfilsMatch: number;
 
@@ -49,35 +50,50 @@ export class FlagComponent implements OnInit {
           this.planets.push(param_planets[Math.floor((Math.random() * param_planets.length))]);
         }
         this.planet = this.planets[this.planetID];
-      }
-    );
 
-    // creation of the profils list
-    this.myProfilsService.getProfils().subscribe(
-      (param_profils: Person[]) => {
-        this.profils = param_profils;
-        console.log("liste des profils 1:", this.profils);
-      }
-    );
 
-      setTimeout(() => {
-        let sexe = critereList[0].Sexe;
-        let nbEyes = critereList[0].nbEyes;
-        let skinType = critereList[0].Skins;
-        // console.log(sexe, nbEyes, skinType)
-        console.log("liste des profils 2:", this.profils);
-    
-        this.searchList = this.profils.filter(
-          (profil) => {
-            if ((profil.sexe.toUpperCase() == sexe.toUpperCase()) && (Number(profil.nberEyes) == nbEyes) && (profil.typeSkin.toUpperCase() == skinType.toUpperCase())) {
-              return true;
-            }
+        // creation of the profils list
+        this.myProfilsService.getProfils().subscribe(
+          (param_profils: Person[]) => {
+            this.profils = param_profils;
+            console.log("liste des profils 1:", this.profils);
+
+
+
+            let sexe = this.critereList[0].Sexe;
+            let nbEyes = this.critereList[0].nbEyes;
+            let skinType = this.critereList[0].Skins;
+
+            /*
+            let sexe = "Male";
+            let nbEyes= 2;
+            let skinType = "Smooth";
+            */
+            console.log("critères de recherche :" + sexe + nbEyes + skinType)
+
+            console.log("liste des profils 2:", this.profils);
+
+            this.searchList = this.profils.filter(
+              (profil) => {
+                if ((profil.sexe.toUpperCase() == sexe.toUpperCase()) && (Number(profil.nberEyes) == nbEyes) && (profil.typeSkin.toUpperCase() == skinType.toUpperCase())) {
+                  console.log(profil.sexe.toUpperCase(), Number(profil.nberEyes), profil.typeSkin.toUpperCase());
+                  return true;
+                }
+              }
+            );
+            console.log(this.searchList);
+
+            this.numberProfilsMatch = this.searchList.length;
           }
         );
-        console.log(this.searchList);
-    
-        this.numberProfilsMatch = this.searchList.length;
-      }, 100);
-    
+
+      }
+    );
+
+
+
+
+
+
   }
 }

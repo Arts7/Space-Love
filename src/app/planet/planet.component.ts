@@ -58,18 +58,20 @@ export class PlanetComponent implements OnInit, OnDestroy {
     this.myService.getPlanets().subscribe(
       (paramPlanets: Planet[]) => {
         this.planets = paramPlanets;
+        
+        this.mapServ.createScene(this.canEleId, this.planetSearchIndex);
+        this.mapServ.animate();
+        
+        
+        this.canvas = <HTMLCanvasElement>document.getElementById(this.canEleId);
+        this.canvas.addEventListener("mousedown", this.mapServ.onDocumentMouseDown, false);
+        this.canvas.addEventListener("mousemove", this.mapServ.onDocumentMouseMove, false);
+
+        this.showWrap = false;
       }
     );
 
-    this.mapServ.createScene(this.canEleId, this.planetSearchIndex);
-    this.mapServ.animate();
 
-    this.canvas = <HTMLCanvasElement>document.getElementById(this.canEleId);
-
-    this.canvas.addEventListener("mousedown", this.mapServ.onDocumentMouseDown, false);
-    this.canvas.addEventListener("mousemove", this.mapServ.onDocumentMouseMove, false);
-
-    this.showWrap = false
   }
 
   public onPreviousPlanet(actualPlanetSearchIndex: number) {

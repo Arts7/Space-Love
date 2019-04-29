@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, Validators, FormArray } from "@angular/forms";
 import { critereList } from '../critere';
 
@@ -9,9 +9,10 @@ import { critereList } from '../critere';
   templateUrl: './espace-recherche.component.html',
   styleUrls: ['./espace-recherche.component.css']
 })
-export class EspaceRechercheComponent implements OnInit {
+export class EspaceRechercheComponent implements OnInit, OnDestroy {
 
   private displayDiagnostic = false;
+  public critereList = critereList;
   
   
   critereForm = this.fb.group({
@@ -32,9 +33,12 @@ export class EspaceRechercheComponent implements OnInit {
 
   }
 
-  
+  ngOnDestroy() {
+    critereList.push(this.critereForm.value); 
+    console.log(critereList);  
+  }
 
-  
+   
 
   onSubmit() {
     
