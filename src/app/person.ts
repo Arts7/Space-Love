@@ -8,3 +8,7 @@ export class Person {
     public description:string;
     public photos:string[];
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> dev

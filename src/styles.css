@@ -5,20 +5,27 @@
 }
 
 @font-face {
+    font-family: "Futura-CondensedLight";
+    src: url("../src/assets/fonts/Futura-CondensedLight.otf") format("opentype");
+}
+h1 {
+    font-family: "Casanova_Scotia", Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;  
+    color: white;  
+    font-size: 3rem;
+}
+
+.profile {
+    font-family: "Futura-CondensedLight", Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5rem;
     font-family: "Disko";
     src: url("../src/assets/fonts/Disko_OT.otf") format("opentype");
 }
 
-@font-face {
-    font-family: "Futura-Condensed-Light";
-    src: url("../src/assets/fonts/Futura-CondensedLight.otf") format("opentype");
-}
 
-h1, h2 {
-    font-family: "Casanova_Scotia", Arial, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
 
 p {
     font-family: "Futura-Condensed-Light", Arial, sans-serif;
