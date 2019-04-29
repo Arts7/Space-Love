@@ -1,55 +1,55 @@
 [
 {
     "id":1,
-    "name":"golsurg",
-    "sexe":"male",
+    "name":"Golsurg",
+    "sexe":"Male",
     "nberEyes":3,
-    "typeSkin":"smooth",    
-    "job":"school shuttle monitor",
+    "typeSkin":"Smooth",    
+    "job":"School Shuttle Monitor",
     "description":"",
     "photos":["Rperso_1-1.jpg", "Rperso_1-2.jpg"]
 },
 
 {
     "id":2,
-    "name":"Alain",
-    "sexe":"male",
+    "name":"Alain le marsien",
+    "sexe":"Male",
     "nberEyes":2,
-    "typeSkin":"smooth",    
-    "job":"",
+    "typeSkin":"Smooth",    
+    "job":"Eyebrows Hairdresser",
     "description":"",
     "photos":["Rperso_7-1.jpg", "Rperso_7-2.jpg", "Rperso_7-3.jpg", "Rperso_7-4.jpg"]
 },
 
 {
     "id":3,
-    "name":"arfgrugnugnu",
-    "sexe":"male",
+    "name":"Arfgrugnugnu",
+    "sexe":"Male",
     "nberEyes":2,
-    "typeSkin":"nothing",    
-    "job":"",
+    "typeSkin":"Nothing",    
+    "job":"Crater Corker",
     "description":"",
     "photos":["Rperso_3-1.jpg", "Rperso_3-2.jpg", "Rperso_3-3.jpg", "Rperso_3-4.jpg", "Rperso_3-5.jpg"]
 },
 
 {
     "id":4,
-    "name":"f+x",
-    "sexe":"male",
+    "name":"Argousiym",
+    "sexe":"Male",
     "nberEyes":2,
-    "typeSkin":"reptile",    
-    "job":"",
+    "typeSkin":"Reptile",    
+    "job":"Night Watchman",
     "description":"",
     "photos":["Rperso_6-1.jpg"]
 },
 
 {
     "id":5,
-    "name":"",
-    "sexe":"male",
+    "name":"Lubluwa",
+    "sexe":"Male",
     "nberEyes":5,
-    "typeSkin":"",    
-    "job":"",
+    "typeSkin":"Reptile",    
+    "job":"Oxygen Tube Designer",
     "description":"",
     "photos":["Rperso_10-1.jpeg", "Rperso_10-2.jpg", "Rperso_10-3.jpg"]
 }

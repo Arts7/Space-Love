@@ -14,7 +14,7 @@ export class DescriptionsComponent implements OnInit {
   public descriptionlist : string[];
   public profils:Person[];
   public picturesPath:string="../assets/img/";
-  public ID:number=0;
+  public ID:number=3;
 
   constructor(private myService:PersonProfilesService) { 
     this.descriptionlist=DESCRIPTIONSLIST;
