@@ -7,29 +7,29 @@
     "typeSkin":"smooth",    
     "job":"school shuttle monitor",
     "description":"",
-    "photos":["Rperso_1-1.jpg", "Rperso_1-2.jpg"]
+    "photos":["../assets/img/Rperso_1-1.jpg", "../assets/img/Rperso_1-2.jpg"]
 },
 
 {
     "id":2,
-    "name":"Alain",
+    "name":"boulerpion",
     "sexe":"male",
-    "nberEyes":2,
+    "nberEyes":5,
     "typeSkin":"smooth",    
     "job":"",
     "description":"",
-    "photos":["Rperso_7-1.jpg", "Rperso_7-2.jpg", "Rperso_7-3.jpg", "Rperso_7-4.jpg"]
+    "photos":["../assets/img/Rperso_10-1.jpeg", "../assets/img/Rperso_10-2.jpg", "../assets/img/Rperso_10-3.jpg"]
 },
 
 {
     "id":3,
     "name":"arfgrugnugnu",
     "sexe":"male",
-    "nberEyes":2,
-    "typeSkin":"nothing",    
+    "nberEyes":4,
+    "typeSkin":"smooth",    
     "job":"",
     "description":"",
-    "photos":["Rperso_3-1.jpg", "Rperso_3-2.jpg", "Rperso_3-3.jpg", "Rperso_3-4.jpg", "Rperso_3-5.jpg"]
+    "photos":["../assets/img/Rperso_4-1.jpg"]
 },
 
 {

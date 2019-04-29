@@ -6,7 +6,7 @@
 
 #map-wrapper {
     position: relative;
-    height: 50rem;
+    height: 46rem;
 }
 
 #wrapEffect {
@@ -27,14 +27,15 @@
 
 .mainPlanetFlag {
     position: absolute;
-    top: 5%;
+    top: 4%;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
 #choosePlanetButtons {
     position: absolute;
-    bottom: 5%;
+    width: 100%;
+    bottom: 35%;
     left: 50%;
     transform: translate(-50%, 0);
 }
