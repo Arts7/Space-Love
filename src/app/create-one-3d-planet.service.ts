@@ -95,7 +95,8 @@ export class CreateOne3dPlanetService {
     this.renderer.setSize(this.divWidth, this.divHeight);
 
     // ajoute l'environnement Map
-    let envMap = new THREE.CubeTextureLoader().setPath(this.texturePath).load(["Starscape.png", "Starscape.png", "Starscape.png", "Starscape.png", "Starscape.png", "Starscape.png"]);
+    // let envMap = new THREE.CubeTextureLoader().setPath(this.texturePath).load(["Starscape.png", "Starscape.png", "Starscape.png", "Starscape.png", "Starscape.png", "Starscape.png"]);
+    let envMap = new THREE.CubeTextureLoader().setPath("../assets/textures/blue/").load(["bkg1_front.png","bkg1_back.png", "bkg1_top.png", "bkg1_bot.png","bkg1_left.png", "bkg1_right.png"]);
     this.scene.background = envMap;
 
     // ajoute la camera
@@ -136,11 +137,11 @@ export class CreateOne3dPlanetService {
 
 
     if (current.bump !== undefined && i !== 0) {
-      this.createPlanetWithBump(i, 8, 32, current.texture, current.bump, current.scale, 0, -1, 0);
+      this.createPlanetWithBump(i, 8, 32, current.texture, current.bump, current.scale, 0, -3, 0);
     } else if (current.bump == undefined && i == 0) {
-      this.createPlanetWithoutBump(i, 8, 32, current.texture, 0, -1, 0);
+      this.createPlanetWithoutBump(i, 8, 32, current.texture, 0, -3, 0);
     } else {
-      this.createPlanetWithoutBump(i, 8, 32, current.texture, 0, -1, 0);
+      this.createPlanetWithoutBump(i, 8, 32, current.texture, 0, -3, 0);
     }
 
 
@@ -209,11 +210,11 @@ export class CreateOne3dPlanetService {
     let current: any = this.texturesArray[i];
 
     if (current.bump !== undefined && i !== 0) {
-      this.createPlanetWithBump(i, 8, 32, current.texture, current.bump, current.scale, 0, -1, 0);
+      this.createPlanetWithBump(i, 8, 32, current.texture, current.bump, current.scale, 0, -3, 0);
     } else if (current.bump == undefined && i == 0) {
-      this.createPlanetWithoutBump(i, 8, 32, current.texture, 0, -1, 0);
+      this.createPlanetWithoutBump(i, 8, 32, current.texture, 0, -3, 0);
     } else {
-      this.createPlanetWithoutBump(i, 8, 32, current.texture, 0, -1, 0);
+      this.createPlanetWithoutBump(i, 8, 32, current.texture, 0, -3, 0);
     }
 
   }
