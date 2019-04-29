@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    text-decoration: bold;
+    margin-bottom: 5%;
+    color: white;
+    font-size: 500%;
+}
+
+.connexion{
+    margin-bottom: 12%;
+}
+
+
+
+.login{
+    margin-top: 8%;
+    padding: 0;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px; 
+    border-color: rgb(85, 12, 153);
+    
+}
+
+#blockpage{
+    display: block;
+    background-size: 100%;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 20px;
+    height: 100vh;
+}
+@media screen and (min-width: 1050px){
+    #blockpage{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1049px){
+    #blockpage{
+        width: 100%;
+    }
+}
+body{
+    background-image: url("https://i.ytimg.com/vi/36e1XAT1TgI/maxresdefault.jpg");
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+}

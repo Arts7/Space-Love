@@ -1,0 +1,36 @@
+<div class="map-container p-2">
+  <div id="map-wrapper">
+    <canvas id="renderCanvas"></canvas>
+    <app-flag class="mainPlanetFlag" [planetID]="planetSearchIndex"></app-flag>
+    <div class="d-flex justify-content-between px-3" id="choosePlanetButtons">
+      <button type="button" class="btn p-2 mx-3" id="previous" (click)="onPreviousPlanet(planetSearchIndex)">
+        <p class="m-0">&lt;&lt; Planet</p>
+      </button>
+      <button type="button" class="btn p-2 mx-3" id="next" (click)="onNextPlanet(planetSearchIndex)">
+        <p class="m-0">Planet &gt;&gt;</p>
+      </button>
+    </div>
+    <!-- <app-wrap id="wrapEffect" *ngIf="showWrap"></app-wrap> -->
+    <div id="wrapEffect" *ngIf="showWrapValue" [ngClass]="{ 'wrapEffectAnimation' : showWrapValue }">
+      <div class="scene">
+        <div class="wrap" [ngClass]="{ 'firstWrapMoveAnimation' : showWrapValue }">
+          <div class="wall wall-right" [ngClass]="{ 'firstWallAnimation' : showWrapValue }"></div>
+          <div class="wall wall-left" [ngClass]="{ 'firstWallAnimation' : showWrapValue }"></div>
+          <div class="wall wall-top" [ngClass]="{ 'firstWallAnimation' : showWrapValue }"></div>
+          <div class="wall wall-bottom" [ngClass]="{ 'firstWallAnimation' : showWrapValue }"></div>
+          <div class="wall wall-back" [ngClass]="{ 'firstWallAnimation' : showWrapValue }"></div>
+        </div>
+        <div class="wrap" [ngClass]="{ 'secondWrapMoveAnimation' : showWrapValue }">
+          <div class="wall wall-right" [ngClass]="{ 'secondWallAnimation' : showWrapValue }"></div>
+          <div class="wall wall-left" [ngClass]="{ 'secondWallAnimation' : showWrapValue }"></div>
+          <div class="wall wall-top" [ngClass]="{ 'secondWallAnimation' : showWrapValue }"></div>
+          <div class="wall wall-bottom" [ngClass]="{ 'secondWallAnimation' : showWrapValue }"></div>
+          <div class="wall wall-back" [ngClass]="{ 'secondWallAnimation' : showWrapValue }"></div>
+        </div>
+      </div>
+      <audio autoplay>
+        <source src="../../assets/sound/JumpToLightspeed.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+</div>

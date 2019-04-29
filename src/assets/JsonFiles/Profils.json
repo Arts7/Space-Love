@@ -1,0 +1,56 @@
+[
+{
+    "id":1,
+    "name":"golsurg",
+    "sexe":"male",
+    "nberEyes":3,
+    "typeSkin":"smooth",    
+    "job":"school shuttle monitor",
+    "description":"",
+    "photos":["../assets/img/Rperso_1-1.jpg", "../assets/img/Rperso_1-2.jpg"]
+},
+
+{
+    "id":2,
+    "name":"boulerpion",
+    "sexe":"male",
+    "nberEyes":5,
+    "typeSkin":"smooth",    
+    "job":"",
+    "description":"",
+    "photos":["../assets/img/Rperso_10-1.jpeg", "../assets/img/Rperso_10-2.jpg", "../assets/img/Rperso_10-3.jpg"]
+},
+
+{
+    "id":3,
+    "name":"arfgrugnugnu",
+    "sexe":"male",
+    "nberEyes":4,
+    "typeSkin":"smooth",    
+    "job":"",
+    "description":"",
+    "photos":["../assets/img/Rperso_4-1.jpg"]
+},
+
+{
+    "id":4,
+    "name":"f+x",
+    "sexe":"male",
+    "nberEyes":2,
+    "typeSkin":"reptile",    
+    "job":"",
+    "description":"",
+    "photos":["Rperso_6-1.jpg"]
+},
+
+{
+    "id":5,
+    "name":"",
+    "sexe":"male",
+    "nberEyes":5,
+    "typeSkin":"",    
+    "job":"",
+    "description":"",
+    "photos":["Rperso_10-1.jpeg", "Rperso_10-2.jpg", "Rperso_10-3.jpg"]
+}
+]

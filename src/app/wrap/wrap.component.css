@@ -1,0 +1,129 @@
+.wall{
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/PIA09959-1280x800_copy.jpg);
+    background-size: cover;
+  }
+  
+  /* html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  body{
+    background: #000;
+    text-align: center;
+  }
+  
+  body:before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  } */
+  
+  .scene{
+    /* display: inline-block;
+    vertical-align: middle; */
+    width: 100%;
+    height: 100%;
+    perspective: 5px;
+    perspective-origin: 50% 50%;
+    position: relative;
+    overflow: hidden;
+   
+  }
+  
+  .wrap{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    /* left: -400px;
+    top: -400px; */
+    transform-style: preserve-3d;
+    /* animation: move 12s 1 linear;
+    animation-fill-mode: forwards; */
+  }
+
+  .firstWrapMoveAnimation {
+    animation: move 12s 1 linear;
+    animation-fill-mode: forwards;
+  }
+  
+  .wrap:nth-child(2){
+    /* animation: move 4s 1 linear;
+    animation-delay: 2s; */
+  }
+  
+  .secondWrapMoveAnimation {
+    animation: move 4s 1 linear;
+    animation-delay: 2s;
+  }
+
+  .wall {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    /* animation: fade 4s 1 linear;
+    animation-delay: 1s; */
+  }
+
+  .firstWallAnimation {
+    animation: fade 4s 1 linear;
+    animation-delay: 1s;
+  }
+  
+  .wrap:nth-child(2) .wall {
+    /* animation-delay: 2s; */
+  }
+
+  .secondWallAnimation {
+    animation-delay: 2s;
+  }
+  
+  .wall-right {
+    transform: rotateY(90deg) translateZ(400px);
+  }
+  
+  .wall-left {
+    transform: rotateY(-90deg) translateZ(400px);
+  }
+  
+  .wall-top {
+    transform: rotateX(90deg) translateZ(400px);
+  }
+  
+  .wall-bottom {
+    transform: rotateX(-90deg) translateZ(400px);
+  }
+  
+  .wall-back {
+    transform: rotateX(180deg) translateZ(400px);
+  }
+
+
+  
+  
+  @keyframes move {
+    0%{
+      transform: translateZ(-400px) rotate(0deg);
+    }
+    100%{
+      transform: translateZ(400px) rotate(0deg);
+    }
+  }
+  
+  @keyframes fade {
+    0%{
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
