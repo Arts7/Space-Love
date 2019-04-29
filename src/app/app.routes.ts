@@ -6,8 +6,10 @@ import{HelpComponent} from './help/help.component';
 import{DescriptionsComponent} from './descriptions/descriptions.component';
 import { PlanetComponent } from "./planet/planet.component";
 import { EspaceRechercheComponent } from "./espace-recherche/espace-recherche.component";
+
 import { EspaceConnexionComponent } from './espace-connexion/espace-connexion.component';
 import { SimpleProfilesComponent } from './simple-profiles/simple-profiles.component';
+
 
 
 
@@ -21,6 +23,7 @@ const ROUTES: Routes = [
 
   { path: 'planet', component: PlanetComponent },
   { path: 'searchPage', component: EspaceRechercheComponent },
+  { path: 'simple-profil', component: SimpleProfilesComponent },
 ];
 
 export { ROUTES };

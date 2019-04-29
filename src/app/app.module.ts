@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { RouterModule } from '@angular/router';
 
@@ -48,17 +48,17 @@ import { PageAccComponent } from './page-acc/page-acc.component';
     WrapComponent,
     EspaceRechercheComponent,
     PageAccComponent,
+
     
   ],
   imports: [
     
     BrowserModule,
     AppRoutingModule,
-    
     ReactiveFormsModule,
     FormsModule,
     RouterModule.forRoot(ROUTES),
-    HttpClientModule,
+    HttpClientModule
   ],
   
   providers: [],
