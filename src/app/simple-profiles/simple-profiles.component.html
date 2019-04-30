@@ -1,5 +1,5 @@
 <div class="body">
-  <h1>Descriptive profile</h1>
+  <h1>{{ planet[0].name }}</h1>
 
   <br />
 
@@ -35,13 +35,15 @@
   <br />
 
   <div class="infoplanet">
-    
+
   </div>
 
   <div class="profile p-5">
     <div class="row justify-content-center">
       <div class="containerSlide">
-        <div *ngFor="let person of profils">
+
+        <div *ngFor="let person of profils" class="carouselSlide"
+          [ngStyle]="{'transform' : updateRotation === true ? rotationSlide() : 'none'}">
           <div class="carouselSlide" [ngStyle]="{'transform' : updateRotation === true ? rotationSlide() : 'none'}">
             <div class="item {{person.name}}" style="width: 18rem;">
               <div class="borderSlide">
@@ -70,9 +72,9 @@
           </div> -->
 
 
-      <div class="next" (click)="rotate('n')">Next</div>
-      <div class="prev" (click)="rotate('p')">Prev</div>
     </div>
+    <div class="next btn p-2 mx-3" (click)="rotate('n')">Profil &gt;&gt;</div>
+    <div class="prev btn p-2 mx-3" (click)="rotate('p')">&lt;&lt; Profil</div>
 
   </div>
 </div>

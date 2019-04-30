@@ -1,11 +1,12 @@
-.body {
-    background-image: url(https://cdn.eso.org/images/screen/eso1035b.jpg);
-    background-attachment: fixed;
+@font-face {
+    font-family: "Casanova_Scotia";
+    src: url("../../assets/fonts/Casanova_Scotia.otf") format("opentype");
 }
 
 h1 {
     text-align: center;
     text-shadow: 1px 1px 7px white;
+    margin-top: 5%;
 }
 
 .block {
@@ -42,9 +43,52 @@ h1 {
     animation-iteration-count: infinite;
 }
 
-button {
+/* button {
     color: white;
+} */
+
+.btn {
+    background-color: #ede7f6;
+    font-size: 1.5rem;
+    font-family: "Casanova_Scotia";
+    color: black;
+    border: 2px solid #6200ea;
+    border-radius: 10px;
+
 }
+
+.prev {
+    font-family: "Casanova_Scotia";
+    box-shadow: 1px 5px #b39ddb, -10px 5px #b39ddb, -10px -5px #b39ddb, 1px -5px #b39ddb;
+    position: absolute;
+    bottom: 50px;
+    left: 1em;
+}
+
+.next {
+    font-family: "Casanova_Scotia";
+    box-shadow: 10px 5px #b39ddb, -1px 5px #b39ddb, -1px -5px #b39ddb, 10px -5px #b39ddb;
+    position: absolute;
+    bottom: 50px;
+    right: 1em;
+}
+
+.prev:hover {
+    color: #4a148c;
+    background-color: white;
+    font-weight: bolder;
+    box-shadow: 1px 5px #1de9b6, -10px 5px #1de9b6, -10px -5px #1de9b6, 1px -5px #1de9b6;
+}
+
+.next:hover {
+    color: #4a148c;
+    background-color: white;
+    font-weight: bolder;
+    box-shadow: 10px 5px #1de9b6, -1px 5px #1de9b6, -1px -5px #1de9b6, 10px -5px #1de9b6;
+}
+
+
+
 @keyframes borderLight {
     0% {
         box-shadow: none;
@@ -112,6 +156,18 @@ button {
     transform: rotateY(240deg) translateZ(300px);   
 }
 
+.Alain {
+    transform: rotateY(0deg) translateZ(300px);   
+}
+
+.Kilucru {
+    transform: rotateY(120deg) translateZ(300px);   
+}
+
+.Monomomgui {
+    transform: rotateY(240deg) translateZ(300px);
+}
+
 /* .d {
     transform: rotateY(180deg) translateZ(250px);
     background: #f26522;
@@ -127,6 +183,7 @@ button {
     background: #8c6239;
 } */
 
+/* ancien code de Richard
 .next, .prev {
     color: #444;
     position: absolute;
@@ -145,14 +202,14 @@ button {
 }
 
 .next:active, .prev:active {
-    /* top: 104px; */
+    top: 104px;
     box-shadow: 0 1px 0 #999;
-}
+} */
 
-.next {
+/* .next {
     right: 1em;
 }
 
 .prev {
     left: 1em;
-}
+} */

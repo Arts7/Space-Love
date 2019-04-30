@@ -3,6 +3,8 @@ import { PersonProfilesService } from '../person-profiles.service';
 import { Person } from '../person';
 import { Router } from '@angular/router';
 import { CarouselProfileService } from '../carousel-profile.service';
+import { profilsMatch } from "../critere";
+import { planetProfil } from "../critere";
 import { PlanetService } from "../planet.service";
 import { Planet } from "../planet";
 
@@ -18,46 +20,57 @@ export class SimpleProfilesComponent implements OnInit {
   public currdeg: number;
   public nextButton: any;
   public prevButton: any;
-
   public profils: Person[];
-
-  public planets: Planet[];
+  public planet: Planet[];
 
   constructor(private myplanetService: PlanetService, private myService: PersonProfilesService) {
-
-    this.planets = [];
-
+    
     this.updateRotation = false;
     // this.carousel = document.querySelector(".carouselSlide");
     this.currdeg = 0;
     // this.nextButton = document.querySelector(".next");
     // this.prevButton = document.querySelector(".prev");
-
+    this.planet = [];
     this.profils = [];
-    
-}     
+
+    // this.myService.getProfils().subscribe(
+    //   (param_profils:Person[]) => {
+    //     this.profils = param_profils;
+    //   }
+    // )
+    this.planet = planetProfil;
+    console.log("Voici la planète à afficher :", this.planet[0]);
+    if (profilsMatch.length > 3){
+      for (let i: number = 0; i < 3; i++) {
+        this.profils.push(profilsMatch[i]);
+      }
+    } else {
+      this.profils = profilsMatch;
+    }
+    console.log("Voici les profils :",this.profils)
+   }
+
 
   ngOnInit() { 
-this.myService.getProfils().subscribe(
-      (param_profils: Person[]) => {
-        this.profils = param_profils;
-      }
-      );  
+  //   this.myService.getProfils().subscribe(
+  //     (param_profils: Person[]) => {
+  //       this.profils = param_profils;
+  //     }
+  //     );  
 
-  this.myplanetService.getPlanets().subscribe(
-    (paramPlanets: Planet[]) => {
-      this.planets = paramPlanets;
-    }
-  );
-
+  // this.myplanetService.getPlanets().subscribe(
+  //   (paramPlanets: Planet[]) => {
+  //     this.planets = paramPlanets;
+  //   }
+  // );
   }
 
   rotate(e: string): void {
     if (e == "n") {
-      this.currdeg = this.currdeg - 120;
+      this.currdeg = this.currdeg - 60;
     }
     if (e == "p") {
-      this.currdeg = this.currdeg + 120;
+      this.currdeg = this.currdeg + 60;
     }
     this.updateRotation = true;
     let item1 = document.querySelector(".Arfgrugnugnu").parentNode as HTMLElement;

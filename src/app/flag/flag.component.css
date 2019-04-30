@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Futura-CondensedLight";
+    src: url("../../assets/fonts/Futura-CondensedLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Casanova_Scotia";
+    src: url("../../assets/fonts/Casanova_Scotia.otf") format("opentype");
+}
+
 .planetFlag {
     padding: 20px 50px;
     border: 2px solid #d1c4e9;
@@ -20,13 +30,14 @@
 
 .planetFlag h2 {
     color: black;
+    font-family: "Casanova_Scotia";
     text-shadow: 3px 3px 3px #6a1b9a;
 }
 
-.planetFlag:hover h2 {
+/* .planetFlag:hover h2 {
     color: black;
     text-shadow: 3px 3px 3px #1de9b6;
-}
+} */
 
 .planetFlag p {
     color: #6a1b9a;
@@ -34,11 +45,11 @@
     margin: 0;
 }
 
-.planetFlag:hover p {
+/* .planetFlag:hover p {
     color: #1de9b6;
     font-size: 2rem;
     margin: 0;
-}
+} */
 
 @keyframes borderLight {
     0% {box-shadow: none; border-color: #d1c4e9;}
@@ -50,4 +61,42 @@
     0% {box-shadow: none; border-color: #d1c4e9;}
     50% {box-shadow: 5px 5px 3px #1de9b6, -5px 5px 3px #1de9b6, -5px -5px 3px #1de9b6, 5px -5px 3px #1de9b6,inset 5px 5px 3px #1de9b6,inset -5px 5px 3px #1de9b6,inset -5px -5px 3px #1de9b6,inset 5px -5px 3px #1de9b6; border-color: rgb(0, 92, 23);}
     100% {box-shadow: none; border-color: #d1c4e9;}
+}
+
+.planetFlagLoader {
+    margin-top: 11rem;
+    padding: 20px 50px;
+    border: 2px solid #d1c4e9;
+    border-radius: 10px;
+    background-color: #ede7f6;
+    animation-name: borderLight;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+.planetFlagLoader h2 {
+    color: black;
+    text-shadow: 3px 3px 3px #6a1b9a;
+}
+
+.planetFlagLoader p {
+    color: #6a1b9a;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #6a1b9a;
+    border-bottom: 16px solid #6a1b9a;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

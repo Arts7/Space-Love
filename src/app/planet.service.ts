@@ -12,7 +12,7 @@ export class PlanetService {
   constructor(private myService: HttpClient) { }
 
   public getPlanets(): Observable<any> {
-    return this.myService.get("assets/JsonFiles/nph-nstedAPI.json").pipe(
+    return this.myService.get("./assets/JsonFiles/nph-nstedAPI.json").pipe(
     // return this.myService.get("https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?&table=exoplanets&format=JSON&where=pl_kepflag=1").pipe(
       map(
         (paramData: any[]) => {

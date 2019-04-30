@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { RouterModule } from '@angular/router';
 
@@ -8,12 +8,10 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from "@angular/forms";
-
 import { PlanetComponent } from './planet/planet.component';
 import { PlanetSystemComponent } from './planet-system/planet-system.component';
 import { AppComponent } from './app.component';
 import { SimpleProfilesComponent } from './simple-profiles/simple-profiles.component';
-
 import { TestComponent } from './test/test.component';
 import { MenuComponent } from './menu/menu.component';
 import { HelpComponent } from './help/help.component';
@@ -49,16 +47,16 @@ import { PageAccComponent } from './page-acc/page-acc.component';
     FlagComponent,
     WrapComponent,
     EspaceRechercheComponent,
-    PageAccComponent,
+    PageAccComponent,    
   ],
   imports: [
+    
     BrowserModule,
     AppRoutingModule,
-    
     ReactiveFormsModule,
     FormsModule,
     RouterModule.forRoot(ROUTES),
-    HttpClientModule,
+    HttpClientModule
   ],
   
   providers: [],
