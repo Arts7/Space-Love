@@ -80,8 +80,8 @@ button {
     width: 18rem;
     position: absolute;
     transform-style: preserve-3d;
-    transition: transform 1s;
-    /* border: 1px solid yellow; */    
+    transition-property: transform, z-index;
+    transition-duration: 1s, 0.5s;      
 }
 
 .item {
@@ -98,15 +98,15 @@ button {
     border-radius: 10px;
 }
 
-.arfgrugnugnu {
-    transform: rotateY(0deg) translateZ(300px);                  
+.Arfgrugnugnu {
+    transform: rotateY(0deg) translateZ(300px);               
 }
 
-.boulerpion {
+.Boulerpion {
     transform: rotateY(120deg) translateZ(300px);        
 }
 
-.golsurg {
+.Golsurg {
     transform: rotateY(240deg) translateZ(300px);   
 }
 
@@ -129,7 +129,7 @@ button {
     color: #444;
     position: absolute;
     bottom: 100px;
-    padding: 1em 2em;
+    padding: 0.5em 1em;
     cursor: pointer;
     background: #CCC;
     border-radius: 5px;

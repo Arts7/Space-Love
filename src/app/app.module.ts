@@ -47,9 +47,7 @@ import { PageAccComponent } from './page-acc/page-acc.component';
     FlagComponent,
     WrapComponent,
     EspaceRechercheComponent,
-    PageAccComponent,
-
-    
+    PageAccComponent,    
   ],
   imports: [
     
