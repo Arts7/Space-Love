@@ -24,3 +24,7 @@ export const profilsMatch: Person[] = [
 export const planetProfil: Planet[] = [
     
 ];
+
+export const ID: number[] = [
+    
+];

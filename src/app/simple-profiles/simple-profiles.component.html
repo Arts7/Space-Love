@@ -33,10 +33,17 @@
   </div>
 
   <br />
-
-  <div class="infoplanet">
-
+  <div class="row justify-content-center">
+    <div class="col-6 infoplanet text-center">
+      <h2>About this planet</h2>
+      <p *ngIf="planet[0].radiusJupiter !== null">Radius : {{ planet[0].radiusJupiter }} (in units of radius of Jupiter)</p>
+      <p *ngIf="planet[0].massJupiter !== null">Mass : {{ planet[0].massJupiter }} (in Jupiter masses)</p>
+      <p *ngIf="planet[0].density !== null">Density : {{ planet[0].density }} (units = g/cm^3)</p>
+      <p *ngIf="planet[0].temperature !== null">Temperature : {{ planet[0].temperature }} (units = kelvin or K)</p>
+      <p *ngIf="planet[0].distanceFromOurSolar !== null">Distance from our solar : {{ planet[0].distanceFromOurSolar }} (units = parsecs)</p>
+    </div>
   </div>
+
 
   <div class="profile p-5">
     <div class="row justify-content-center">
@@ -47,7 +54,7 @@
           <div class="carouselSlide" [ngStyle]="{'transform' : updateRotation === true ? rotationSlide() : 'none'}">
             <div class="item {{person.name}}" style="width: 18rem;">
               <div class="borderSlide">
-                <button (click)="createProfile('Profile')" type="button" class="btn btn-lg btn-block">Profile</button>
+                <a [routerLink]="['/descriptions']"><button (click)="createProfile(person)" type="button" class="chooseProfilButton my-3">Choose this profile</button></a>
                 <img [src]="person.photos[0]" height="250" class="card-img-top" alt="photo du profil">
                 <p>Name : {{person.name}}</p>
                 <p>Sexe : {{person.sexe}}</p>
@@ -73,8 +80,8 @@
 
 
     </div>
-    <div class="next btn p-2 mx-3" (click)="rotate('n')">Profil &gt;&gt;</div>
-    <div class="prev btn p-2 mx-3" (click)="rotate('p')">&lt;&lt; Profil</div>
+    <div class="next btn p-2 mx-3" (click)="rotate('n')">Profile &gt;&gt;</div>
+    <div class="prev btn p-2 mx-3" (click)="rotate('p')">&lt;&lt; Profile</div>
 
   </div>
 </div>
