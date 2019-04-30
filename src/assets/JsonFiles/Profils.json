@@ -7,7 +7,7 @@
     "typeSkin":"Smooth",    
     "job":"School Shuttle Monitor",
     "description":"",
-    "photos":["../assets/img/Rperso_1-1.jpg", "../assets/img/Rperso_1-2.jpg"]
+    "photos":["./assets/img/Rperso_1-1.jpg", "./assets/img/Rperso_1-2.jpg"]
 },
 
 {
@@ -18,7 +18,7 @@
     "typeSkin":"Smooth",       
     "job":"Eyebrows Hairdresser",
     "description":"",
-    "photos":["../assets/img/Rperso_10-1.jpeg", "../assets/img/Rperso_10-2.jpg", "../assets/img/Rperso_10-3.jpg"]
+    "photos":["./assets/img/Rperso_10-1.jpeg", "./assets/img/Rperso_10-2.jpg", "./assets/img/Rperso_10-3.jpg"]
 },
 
 {
@@ -29,10 +29,8 @@
     "typeSkin":"Smooth",       
     "job":"Crater Corker",
     "description":"",
-    "photos":["../assets/img/Rperso_4-1.jpg"]
+    "photos":["./assets/img/Rperso_4-1.jpg"]
 },
-
-
 {
     "id":4,
     "name":"Mylisoon",
@@ -41,7 +39,7 @@
     "typeSkin":"Smooth",    
     "job":"Crater Corker",
     "description":"",
-    "photos":["../assets/img/Rperso_9-1.jpg", "../assets/img/Rperso_9-2.jpg", "../assets/img/Rperso_9-3.jpg", "../assets/img/Rperso_9-4.jpg"]
+    "photos":["./assets/img/Rperso_9-1.jpg", "./assets/img/Rperso_9-2.jpg", "./assets/img/Rperso_9-3.jpg", "./assets/img/Rperso_9-4.jpg"]
 },
 
 {
@@ -53,6 +51,7 @@
     "job":"Actor",
     "description":"",
     "photos":["../assets/img/Rperso_13-1.jpg"]
+
 },
 
 {
@@ -63,6 +62,6 @@
     "typeSkin":"smooth",    
     "job":"Mermaid",
     "description":"",
-    "photos":["../assets/img/Rperso_12-1.jpg"]
+    "photos":["./assets/img/Rperso_12-1.jpg"]
 }
 ]

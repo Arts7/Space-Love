@@ -7,6 +7,7 @@ import { profilsMatch } from "../critere";
 import { planetProfil } from "../critere";
 import { PlanetService } from "../planet.service";
 import { Planet } from "../planet";
+import { ID } from "../critere";
 
 @Component({
   selector: 'app-simple-profiles',
@@ -105,5 +106,10 @@ export class SimpleProfilesComponent implements OnInit {
   rotationSlide() {
     return "rotateY(" + this.currdeg.toString() + "deg)";
 
+  }
+
+  createProfile(person: Person) {
+    ID.push(person.id);
+    console.log(ID);
   }
 }

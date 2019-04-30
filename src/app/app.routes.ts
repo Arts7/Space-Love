@@ -19,7 +19,7 @@ const ROUTES: Routes = [
   { path: 'space-map', component: SpaceMapComponent },
   { path: 'your-profile', component: YourProfileComponent },
   { path: 'help', component: HelpComponent },
-  { path: 'descriptions', component: SimpleProfilesComponent},
+  { path: 'descriptions', component: DescriptionsComponent},
 
   { path: 'planet', component: PlanetComponent },
   { path: 'searchPage', component: EspaceRechercheComponent },
