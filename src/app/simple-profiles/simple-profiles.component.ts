@@ -3,6 +3,9 @@ import { PersonProfilesService } from '../person-profiles.service';
 import { Person } from '../person';
 import { Router } from '@angular/router';
 import { CarouselProfileService } from '../carousel-profile.service';
+import { profilsMatch } from "../critere";
+import { planetProfil } from "../critere";
+import { Planet } from "../planet";
 
 @Component({
   selector: 'app-simple-profiles',
@@ -18,6 +21,7 @@ export class SimpleProfilesComponent implements OnInit {
 	public prevButton: any;
 
   public profils:Person[];
+  public planet: Planet[];
   
   constructor( private myService:PersonProfilesService) {
     
@@ -26,17 +30,22 @@ export class SimpleProfilesComponent implements OnInit {
 		this.currdeg = 0;
 		// this.nextButton = document.querySelector(".next");
     // this.prevButton = document.querySelector(".prev");
-    
-    this.profils=[];
+    this.planet = [];
+    this.profils = [];
 
-    this.myService.getProfils().subscribe(
-      (param_profils:Person[]) => {
-        this.profils = param_profils;
-      }
-    )
+    // this.myService.getProfils().subscribe(
+    //   (param_profils:Person[]) => {
+    //     this.profils = param_profils;
+    //   }
+    // )
+    this.planet = planetProfil;
+    console.log("Voici la planète à afficher :", this.planet[0]);
+    this.profils = profilsMatch;
    }
 
   ngOnInit() {
+    // this.planet = planetProfil;
+    // console.log(this.planet);
   }
 
 

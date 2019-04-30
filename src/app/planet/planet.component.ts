@@ -63,9 +63,9 @@ export class PlanetComponent implements OnInit, OnDestroy {
         this.mapServ.animate();
         
         
-        this.canvas = <HTMLCanvasElement>document.getElementById(this.canEleId);
-        this.canvas.addEventListener("mousedown", this.mapServ.onDocumentMouseDown, false);
-        this.canvas.addEventListener("mousemove", this.mapServ.onDocumentMouseMove, false);
+        // this.canvas = <HTMLCanvasElement>document.getElementById(this.canEleId);
+        // this.canvas.addEventListener("mousedown", this.mapServ.onDocumentMouseDown, false);
+        // this.canvas.addEventListener("mousemove", this.mapServ.onDocumentMouseMove, false);
 
         this.showWrap = false;
       }
@@ -112,7 +112,7 @@ export class PlanetComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.canvas.removeEventListener("mousedown", this.mapServ.onDocumentMouseDown, false);
-    this.canvas.removeEventListener("mousemove", this.mapServ.onDocumentMouseMove, false);
+    // this.canvas.removeEventListener("mousedown", this.mapServ.onDocumentMouseDown, false);
+    // this.canvas.removeEventListener("mousemove", this.mapServ.onDocumentMouseMove, false);
   }
 }
