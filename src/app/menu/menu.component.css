@@ -1,3 +1,25 @@
 .navbar {
-    font-family: Futura; 
+    font-family: 'Futura-CondensedLight';
+    margin-right: 41%;
+    margin-left: 41%;
+    font-size: 23px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 1%;
 }
+li{
+    margin-right: 20%;
+    margin-left: -10%;
+}
+.babar{
+    height: 40px;
+}
+
+.bar{
+    justify-content: center;
+    
+}
+
