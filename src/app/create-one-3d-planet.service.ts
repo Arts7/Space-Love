@@ -221,13 +221,7 @@ export class CreateOne3dPlanetService {
 
 
   animate(): void {
-    window.addEventListener('DOMContentLoaded', () => {
-      this.render();
-    });
-
-    window.addEventListener('resize', () => {
-      this.resize();
-    });
+    this.render();
   }
 
   render() {
@@ -236,7 +230,7 @@ export class CreateOne3dPlanetService {
     });
 
     //animation
-    this.planetes[0].rotation.y += 0.01;
+    this.planetes[0].rotation.y += 0.005;
 
     this.renderer.render(this.scene, this.camera);
   }
@@ -257,7 +251,7 @@ export class CreateOne3dPlanetService {
   onDocumentMouseDown(event: any) {
     event.preventDefault();
     this.mouse.x = (event.clientX - this.divOffsetLeft) / this.divWidth * 2 - 1;
-    this.mouse.y = (event.clientY - this.divOffsetTop) / this.divHeight * 2 - 1.16;
+    this.mouse.y = (event.clientY - this.divOffsetTop) / this.divHeight * 2 - 1.48;
     console.log(this.mouse.x);
     console.log(this.mouse.y);
     this.raycaster.setFromCamera(this.mouse, this.camera);
@@ -273,7 +267,7 @@ export class CreateOne3dPlanetService {
   onDocumentMouseMove(event: any): void {
     // console.log("mouxe X: " + (event.clientX - this.divOffsetLeft), "mouse Y: " + (event.clientY - this.divOffsetTop));
     this.mouse.x = (event.clientX - this.divOffsetLeft) / this.divWidth * 2 - 1;
-    this.mouse.y = (event.clientY - this.divOffsetTop) / this.divHeight * 2 - 1.16;
+    this.mouse.y = (event.clientY - this.divOffsetTop) / this.divHeight * 2 - 1.48;
     // console.log(this.mouse.x, this.mouse.y);
     this.raycaster.setFromCamera(this.mouse, this.camera);
     let intersects: THREE.Intersection[] = this.raycaster.intersectObjects(this.planetes, true);

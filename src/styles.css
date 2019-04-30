@@ -8,6 +8,12 @@
     font-family: "Futura-CondensedLight";
     src: url("../src/assets/fonts/Futura-CondensedLight.otf") format("opentype");
 }
+
+@font-face {
+    font-family: "Disko";
+    src: url("../src/assets/fonts/Disko_OT.otf") format("opentype");
+}
+
 h1 {
     font-family: "Casanova_Scotia", Arial, sans-serif;
     font-weight: normal;
@@ -31,4 +37,9 @@ p {
     font-family: "Futura-Condensed-Light", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
+}
+body{
+    background-image: url(./assets/img/FOND.png);
+    
+    background-attachment: fixed;
 }

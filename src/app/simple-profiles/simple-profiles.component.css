@@ -1,11 +1,9 @@
-.body {
-    background-image: url(https://cdn.eso.org/images/screen/eso1035b.jpg);
-    background-attachment: fixed;
-}
+
 
 h1 {
     text-align: center;
     text-shadow: 1px 1px 7px white;
+    margin-top: 5%;
 }
 
 .block {

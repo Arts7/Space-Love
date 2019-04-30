@@ -2,10 +2,10 @@
 {
     "id":1,
     "name":"Golsurg",
-    "sexe":"male",
+    "sexe":"Male",
     "nberEyes":3,
-    "typeSkin":"smooth",    
-    "job":"school shuttle monitor",
+    "typeSkin":"Smooth",    
+    "job":"School Shuttle Monitor",
     "description":"",
     "photos":["../assets/img/Rperso_1-1.jpg", "../assets/img/Rperso_1-2.jpg"]
 },
@@ -13,10 +13,10 @@
 {
     "id":2,
     "name":"Boulerpion",
-    "sexe":"male",
+    "sexe":"Male",
     "nberEyes":5,
-    "typeSkin":"smooth",    
-    "job":"",
+    "typeSkin":"Smooth",       
+    "job":"Eyebrows Hairdresser",
     "description":"",
     "photos":["../assets/img/Rperso_10-1.jpeg", "../assets/img/Rperso_10-2.jpg", "../assets/img/Rperso_10-3.jpg"]
 },
@@ -26,19 +26,19 @@
     "name":"Arfgrugnugnu",
     "sexe":"male",
     "nberEyes":4,
-    "typeSkin":"smooth",    
-    "job":"",
+    "typeSkin":"Smooth",       
+    "job":"Crater Corker",
     "description":"",
     "photos":["../assets/img/Rperso_4-1.jpg"]
 },
 
 {
     "id":4,
-    "name":"f+x",
-    "sexe":"male",
+    "name":"Argousiym",
+    "sexe":"Male",
     "nberEyes":2,
-    "typeSkin":"reptile",    
-    "job":"",
+    "typeSkin":"Reptile",    
+    "job":"Night Watchman",
     "description":"",
     "photos":["../assets/img/Rperso_6-1.jpg"]
 },
@@ -46,9 +46,9 @@
 {
     "id":5,
     "name":"Alain",
-    "sexe":"male",
+    "sexe":"Male",
     "nberEyes":2,
-    "typeSkin":"smooth",    
+    "typeSkin":"Smooth",    
     "job":"",
     "description":"",
     "photos":["../assets/img/Rperso_7-1.jpeg", "../assets/img/Rperso_7-2.jpg", "../assets/img/Rperso_7-3.jpg", "../assets/img/Rperso_7-4.jpg"]
@@ -57,10 +57,10 @@
 {
     "id":6,
     "name":"Monomomgui",
-    "sexe":"male",
+    "sexe":"Male",
     "nberEyes":1,
-    "typeSkin":"",    
-    "job":"",
+    "typeSkin":"Smooth",       
+    "job":"Oxygen Tube Designer",
     "description":"",
     "photos":["../assets/img/Rperso_8-1.jpg", "../assets/img/Rperso_8-2.jpg"]
 },
@@ -68,9 +68,9 @@
 {
     "id":7,
     "name":"Mylisoon",
-    "sexe":"female",
+    "sexe":"Female",
     "nberEyes":1,
-    "typeSkin":"smooth",    
+    "typeSkin":"Smooth",    
     "job":"",
     "description":"",
     "photos":["../assets/img/Rperso_9-1.jpg", "../assets/img/Rperso_9-2.jpg", "../assets/img/Rperso_9-3.jpg", "../assets/img/Rperso_9-4.jpg"]
@@ -79,9 +79,9 @@
 {
     "id":8,
     "name":"Kilucru",
-    "sexe":"male",
+    "sexe":"Male",
     "nberEyes":2,
-    "typeSkin":"smooth",    
+    "typeSkin":"Smooth",    
     "job":"Actor",
     "description":"",
     "photos":["../assets/img/Rperso_11-1.jpg", "../assets/img/Rperso_11-2.jpg"]
@@ -90,9 +90,9 @@
 {
     "id":9,
     "name":"Fietteoffish",
-    "sexe":"female",
+    "sexe":"Female",
     "nberEyes":3,
-    "typeSkin":"fish",    
+    "typeSkin":"Fish",    
     "job":"Mermaid",
     "description":"",
     "photos":["../assets/img/Rperso_12-1.jpg"]
