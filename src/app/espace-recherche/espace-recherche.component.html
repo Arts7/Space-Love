@@ -1,0 +1,42 @@
+<h1>Research</h1>
+<div class="critere offset-4 col-4">
+
+  <form (ngSubmit)="myForm.valid && onSubmit()" [formGroup]="critereForm" #myForm="ngForm">
+    <div *ngIf="displayDiagnostic">
+      Form submitted ? {{myForm.submitted}}
+      Form valid ? {{myForm.valid}}
+      Form invalid ? {{myForm.invalid}}
+    </div>
+
+    <div>
+      <label class="nomLabel" for="Sexe-critere">Gender :<br />
+        <select class="champ1" name="Sexe-critere" formControlName="Sexe">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Hermaphrodite">Hermaphrodite</option>
+        </select>
+      </label>
+    </div>
+    <div>
+      <label class="nomLabel" for="nbEyes-critere">Eyes :<br />
+        <select class="champ" name="nbEyes-critere" formControlName="nbEyes">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </label>
+    </div>
+    <div>
+      <label class="nomLabel" for="Skins-critere">Skins :<br />
+        <select class="champ1" name="Skins-critere" formControlName="Skins">
+          <option value="Smooth">Smooth</option>
+          <option value="Reptile">Reptile</option>
+          <option value="Fish">Fish</option>
+        </select>
+      </label>
+    </div>
+    <button type="submit"  class="btn p-2 mx-3"><a [routerLink]="['/planet']">Search</a></button>
+  </form>
+</div>

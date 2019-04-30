@@ -1,0 +1,63 @@
+h1{
+    text-align: center;
+    font-size: 190%;
+    font-weight: bold;
+    color:white;
+    margin-top: 5%;
+}
+
+.login {
+    text-align: center;
+    background-color: rgb(241, 238, 238);
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(85, 12, 153);
+    border-radius: 10%;
+    margin-bottom: 21%;
+    
+
+}
+
+.nomLabel {
+    font-weight: bold;
+    margin-top:7%;
+    font-size: 150%;
+}
+
+.button{
+    display: block;
+    margin-bottom: 3%;
+    padding: 5%;
+}
+button{
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: 120%;
+    
+}
+
+.champ{
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    text-align: center;
+}
+
+.remember{
+    font-size: 130%;
+}
+
+.btn {
+    background-color: #ede7f6;
+    color: black;
+    border: 2px solid #6200ea;
+    border-radius: 10px;
+    box-shadow: 10px 5px #b39ddb, -10px 5px #b39ddb, -10px -5px #b39ddb, 10px -5px #b39ddb;
+}
+
+.btn:hover {
+    color: #4a148c;
+    background-color: white;
+    font-weight: bolder;
+    box-shadow: 10px 5px #1de9b6, -10px 5px #1de9b6, -10px -5px #1de9b6, 10px -5px #1de9b6;
+}
