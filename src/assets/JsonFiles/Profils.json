@@ -1,7 +1,7 @@
 [
 {
     "id":1,
-    "name":"golsurg",
+    "name":"Golsurg",
     "sexe":"male",
     "nberEyes":3,
     "typeSkin":"smooth",    
@@ -12,7 +12,7 @@
 
 {
     "id":2,
-    "name":"boulerpion",
+    "name":"Boulerpion",
     "sexe":"male",
     "nberEyes":5,
     "typeSkin":"smooth",    
@@ -23,7 +23,7 @@
 
 {
     "id":3,
-    "name":"arfgrugnugnu",
+    "name":"Arfgrugnugnu",
     "sexe":"male",
     "nberEyes":4,
     "typeSkin":"smooth",    
@@ -40,17 +40,50 @@
     "typeSkin":"reptile",    
     "job":"",
     "description":"",
-    "photos":["Rperso_6-1.jpg"]
+    "photos":["../assets/img/Rperso_6-1.jpg"]
 },
 
 {
     "id":5,
-    "name":"",
+    "name":"Alain",
     "sexe":"male",
-    "nberEyes":5,
+    "nberEyes":2,
+    "typeSkin":"smooth",    
+    "job":"",
+    "description":"",
+    "photos":["../assets/img/Rperso_7-1.jpeg", "../assets/img/Rperso_7-2.jpg", "../assets/img/Rperso_7-3.jpg", "../assets/img/Rperso_7-4.jpg"]
+},
+
+{
+    "id":6,
+    "name":"Monomome",
+    "sexe":"male",
+    "nberEyes":1,
     "typeSkin":"",    
     "job":"",
     "description":"",
-    "photos":["Rperso_10-1.jpeg", "Rperso_10-2.jpg", "Rperso_10-3.jpg"]
+    "photos":["../assets/img/Rperso_8-1.jpg", "../assets/img/Rperso_8-2.jpg"]
+},
+
+{
+    "id":7,
+    "name":"Mylimoon",
+    "sexe":"female",
+    "nberEyes":1,
+    "typeSkin":"smooth",    
+    "job":"",
+    "description":"",
+    "photos":["../assets/img/Rperso_9-1.jpg", "../assets/img/Rperso_9-2.jpg", "../assets/img/Rperso_9-3.jpg", "../assets/img/Rperso_9-4.jpg"]
+},
+
+{
+    "id":8,
+    "name":"Kilucru",
+    "sexe":"male",
+    "nberEyes":2,
+    "typeSkin":"smooth",    
+    "job":"Actor",
+    "description":"",
+    "photos":["../assets/img/Rperso_11-1.jpg", "../assets/img/Rperso_11-2.jpg"]
 }
 ]

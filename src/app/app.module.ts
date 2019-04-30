@@ -35,11 +35,7 @@ import { PageAccComponent } from './page-acc/page-acc.component';
   declarations: [
     AppComponent,
     SimpleProfilesComponent,
-    TestComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
+    TestComponent,
     MenuComponent,
     HelpComponent,
     SpaceMapComponent,
@@ -54,6 +50,11 @@ import { PageAccComponent } from './page-acc/page-acc.component';
     WrapComponent,
     EspaceRechercheComponent,
     PageAccComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    
     ReactiveFormsModule,
     FormsModule,
     RouterModule.forRoot(ROUTES),

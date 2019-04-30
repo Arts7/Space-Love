@@ -48,9 +48,9 @@ export class SimpleProfilesComponent implements OnInit {
       this.currdeg = this.currdeg + 120;
     }
     this.updateRotation = true;
-    let item1 = document.querySelector(".arfgrugnugnu").parentNode as HTMLElement;
-    let item2 = document.querySelector(".golsurg").parentNode as HTMLElement;
-    let item3 = document.querySelector(".boulerpion").parentNode as HTMLElement;
+    let item1 = document.querySelector(".Arfgrugnugnu").parentNode as HTMLElement;
+    let item2 = document.querySelector(".Golsurg").parentNode as HTMLElement;
+    let item3 = document.querySelector(".Boulerpion").parentNode as HTMLElement;
 
     item1.style.zIndex = "100";
     item2.style.zIndex = "100";
