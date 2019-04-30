@@ -4,6 +4,11 @@
     background-color: #ede7f6;
 } */
 
+@font-face {
+    font-family: "Casanova_Scotia";
+    src: url("../../assets/fonts/Casanova_Scotia.otf") format("opentype");
+}
+
 #map-wrapper {
     position: relative;
     height: 46rem;
@@ -43,6 +48,7 @@
 .btn {
     background-color: #ede7f6;
     font-size: 2rem;
+    font-family: "Casanova_Scotia";
     color: black;
     border: 2px solid #6200ea;
     border-radius: 10px;
@@ -60,6 +66,7 @@
     color: #4a148c;
     background-color: white;
     font-weight: bolder;
+    text-shadow: 1px 1px 0px black;
     box-shadow: 1px 5px #1de9b6, -10px 5px #1de9b6, -10px -5px #1de9b6, 1px -5px #1de9b6;
 }
 
@@ -67,6 +74,7 @@
     color: #4a148c;
     background-color: white;
     font-weight: bolder;
+    text-shadow: 1px 1px 0px black;
     box-shadow: 10px 5px #1de9b6, -1px 5px #1de9b6, -1px -5px #1de9b6, 10px -5px #1de9b6;
 }
 
