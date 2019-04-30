@@ -24,7 +24,7 @@
 {
     "id":3,
     "name":"Arfgrugnugnu",
-    "sexe":"male",
+    "sexe":"Male",
     "nberEyes":4,
     "typeSkin":"Smooth",       
     "job":"Crater Corker",
@@ -51,7 +51,7 @@
     "typeSkin":"Smooth",    
     "job":"",
     "description":"",
-    "photos":["../assets/img/Rperso_7-1.jpeg", "../assets/img/Rperso_7-2.jpg", "../assets/img/Rperso_7-3.jpg", "../assets/img/Rperso_7-4.jpg"]
+    "photos":["../assets/img/Rperso_7-1.jpg", "../assets/img/Rperso_7-2.jpg", "../assets/img/Rperso_7-3.jpg", "../assets/img/Rperso_7-4.jpg"]
 },
 
 {
