@@ -32,10 +32,10 @@ export class TestComponent implements OnInit {
 
 rotate(e:string): void {
 	if (e == "n") {
-		this.currdeg = this.currdeg - 60;
+		this.currdeg = this.currdeg - 120;
 	}
 	if (e == "p") {
-		this.currdeg = this.currdeg + 60;
+		this.currdeg = this.currdeg + 120;
 	}
 	this.updateRotation = true;
 }

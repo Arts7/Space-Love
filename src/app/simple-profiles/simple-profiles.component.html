@@ -33,10 +33,15 @@
   </div>
 
   <br />
-
+ 
+<div class="infoplanet">
+  
+</div>
+  
   <div class="profile p-5">
     <div class="row justify-content-center">
       <div class="containerSlide">
+
         <div *ngFor="let person of profils" class="carouselSlide"
           [ngStyle]="{'transform' : updateRotation === true ? rotationSlide() : 'none'}">
           <div class="carouselSlide" [ngStyle]="{'transform' : updateRotation === true ? rotationSlide() : 'none'}">
@@ -50,7 +55,10 @@
                 <p>Number eyes : {{person.nberEyes}}</p>
               </div>
             </div>
-            <!-- <div class="item {{person.name}}">
+          </div>
+        </div>
+      </div>
+      <!-- <div class="item {{person.name}}">
             <div class="item {{person.name}}" style="width: 18rem;">
               <div class="borderSlide">
                 <button (click)="createProfile('Profile')" type="button" class="btn btn-lg btn-block">Profile</button>
@@ -62,11 +70,13 @@
               </div> 
             </div>
           </div> -->
+
           </div>
         </div>
       </div>
       <div class="next btn p-2 mx-3" (click)="rotate('n')">Profil &gt;&gt;</div>
       <div class="prev btn p-2 mx-3" (click)="rotate('p')">&lt;&lt; Profil</div>
+
     </div>
   </div>
 </div>

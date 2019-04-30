@@ -1,56 +1,100 @@
 [
 {
     "id":1,
-    "name":"golsurg",
-    "sexe":"male",
+    "name":"Golsurg",
+    "sexe":"Male",
     "nberEyes":3,
-    "typeSkin":"smooth",    
-    "job":"school shuttle monitor",
+    "typeSkin":"Smooth",    
+    "job":"School Shuttle Monitor",
     "description":"",
     "photos":["../assets/img/Rperso_1-1.jpg", "../assets/img/Rperso_1-2.jpg"]
 },
 
 {
     "id":2,
-    "name":"boulerpion",
-    "sexe":"male",
+    "name":"Boulerpion",
+    "sexe":"Male",
     "nberEyes":5,
-    "typeSkin":"smooth",    
-    "job":"",
+    "typeSkin":"Smooth",       
+    "job":"Eyebrows Hairdresser",
     "description":"",
     "photos":["../assets/img/Rperso_10-1.jpeg", "../assets/img/Rperso_10-2.jpg", "../assets/img/Rperso_10-3.jpg"]
 },
 
 {
     "id":3,
-    "name":"arfgrugnugnu",
+    "name":"Arfgrugnugnu",
     "sexe":"male",
     "nberEyes":4,
-    "typeSkin":"smooth",    
-    "job":"",
+    "typeSkin":"Smooth",       
+    "job":"Crater Corker",
     "description":"",
     "photos":["../assets/img/Rperso_4-1.jpg"]
 },
 
 {
     "id":4,
-    "name":"f+x",
-    "sexe":"male",
+    "name":"Argousiym",
+    "sexe":"Male",
     "nberEyes":2,
-    "typeSkin":"reptile",    
-    "job":"",
+    "typeSkin":"Reptile",    
+    "job":"Night Watchman",
     "description":"",
-    "photos":["Rperso_6-1.jpg"]
+    "photos":["../assets/img/Rperso_6-1.jpg"]
 },
 
 {
     "id":5,
-    "name":"",
-    "sexe":"male",
-    "nberEyes":5,
-    "typeSkin":"",    
+    "name":"Alain",
+    "sexe":"Male",
+    "nberEyes":2,
+    "typeSkin":"Smooth",    
     "job":"",
     "description":"",
-    "photos":["Rperso_10-1.jpeg", "Rperso_10-2.jpg", "Rperso_10-3.jpg"]
+    "photos":["../assets/img/Rperso_7-1.jpeg", "../assets/img/Rperso_7-2.jpg", "../assets/img/Rperso_7-3.jpg", "../assets/img/Rperso_7-4.jpg"]
+},
+
+{
+    "id":6,
+    "name":"Monomomgui",
+    "sexe":"Male",
+    "nberEyes":1,
+    "typeSkin":"Smooth",       
+    "job":"Oxygen Tube Designer",
+    "description":"",
+    "photos":["../assets/img/Rperso_8-1.jpg", "../assets/img/Rperso_8-2.jpg"]
+},
+
+{
+    "id":7,
+    "name":"Mylisoon",
+    "sexe":"Female",
+    "nberEyes":1,
+    "typeSkin":"Smooth",    
+    "job":"",
+    "description":"",
+    "photos":["../assets/img/Rperso_9-1.jpg", "../assets/img/Rperso_9-2.jpg", "../assets/img/Rperso_9-3.jpg", "../assets/img/Rperso_9-4.jpg"]
+},
+
+{
+    "id":8,
+    "name":"Kilucru",
+    "sexe":"Male",
+    "nberEyes":2,
+    "typeSkin":"Smooth",    
+    "job":"Actor",
+    "description":"",
+    "photos":["../assets/img/Rperso_11-1.jpg", "../assets/img/Rperso_11-2.jpg"]
+},
+
+{
+    "id":9,
+    "name":"Fietteoffish",
+    "sexe":"Female",
+    "nberEyes":3,
+    "typeSkin":"Fish",    
+    "job":"Mermaid",
+    "description":"",
+    "photos":["../assets/img/Rperso_12-1.jpg"]
 }
 ]
