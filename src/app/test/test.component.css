@@ -142,14 +142,14 @@ body {
 	background: #ed1c24;
   }
   .b {
-	transform: rotateY(60deg) translateZ(250px);
+	transform: rotateY(120deg) translateZ(250px);
 	background: #0072bc;
   }
   .c {
-	transform: rotateY(120deg) translateZ(250px);
+	transform: rotateY(240deg) translateZ(250px);
 	background: #39b54a;
   }
-  .d {
+  /* .d {
 	transform: rotateY(180deg) translateZ(250px);
 	background: #f26522;
   }
@@ -160,7 +160,7 @@ body {
   .f {
 	transform: rotateY(300deg) translateZ(250px);
 	background: #8c6239;
-  }
+  } */
   
   .next, .prev {
 	color: #444;
@@ -175,7 +175,10 @@ body {
 	transition: box-shadow 0.1s, top 0.1s;
 	}
 	
-  .next:hover, .prev:hover { color: #000; }
+  .next:hover, .prev:hover { 
+		color: #000;
+	 }
+	 
   .next:active, .prev:active {
 	top: 104px;
 	box-shadow: 0 1px 0 #999;
