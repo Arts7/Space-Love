@@ -156,6 +156,18 @@ h1 {
     transform: rotateY(240deg) translateZ(300px);   
 }
 
+.Alain {
+    transform: rotateY(0deg) translateZ(300px);   
+}
+
+.Kilucru {
+    transform: rotateY(120deg) translateZ(300px);   
+}
+
+.Monomomgui {
+    transform: rotateY(240deg) translateZ(300px);
+}
+
 /* .d {
     transform: rotateY(180deg) translateZ(250px);
     background: #f26522;

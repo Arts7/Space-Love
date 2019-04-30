@@ -77,7 +77,7 @@ export class FlagComponent implements OnInit {
 
             this.searchList = this.profils.filter(
               (profil) => {
-                if ((profil.sexe.toUpperCase() == sexe.toUpperCase()) && (Number(profil.nberEyes) == nbEyes) && (profil.typeSkin.toUpperCase() == skinType.toUpperCase())) {
+                if ((profil.sexe.toUpperCase() == sexe.toUpperCase()) && ((Number(profil.nberEyes) == Number(nbEyes)) || (Number(profil.nberEyes) == Number(nbEyes)-1) || (Number(profil.nberEyes) == Number(nbEyes)+1)) && (profil.typeSkin.toUpperCase() == skinType.toUpperCase())) {
                   console.log(profil.sexe.toUpperCase(), Number(profil.nberEyes), profil.typeSkin.toUpperCase());
                   return true;
                 }
