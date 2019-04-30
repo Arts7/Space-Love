@@ -127,7 +127,8 @@ h1 {
     position: absolute;
     transform-style: preserve-3d;
     transition-property: transform, z-index;
-    transition-duration: 1s, 0.5s;      
+    transition-duration: 1s, 0.5s;
+    
 }
 
 .item {
@@ -156,15 +157,15 @@ h1 {
     transform: rotateY(240deg) translateZ(300px);   
 }
 
-.Alain {
+.Mylisoon {
     transform: rotateY(0deg) translateZ(300px);   
 }
 
-.Kilucru {
+.Cecilium {
     transform: rotateY(120deg) translateZ(300px);   
 }
 
-.Monomomgui {
+.Fietteoffish {
     transform: rotateY(240deg) translateZ(300px);
 }
 
