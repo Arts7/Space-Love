@@ -48,11 +48,9 @@
   <div class="profile p-5">
     <div class="row justify-content-center">
       <div class="containerSlide">
-
-        <div *ngFor="let person of profils" class="carouselSlide"
+        <div *ngFor="let person of profils; let curi = index" class="carouselSlide"
           [ngStyle]="{'transform' : updateRotation === true ? rotationSlide() : 'none'}">
-          <div class="carouselSlide" [ngStyle]="{'transform' : updateRotation === true ? rotationSlide() : 'none'}">
-            <div class="item {{person.name}}" style="width: 18rem;">
+            <div class="item {{person.name}}"[attr.data-index]="curi" style="width: 18rem;">
               <div class="borderSlide">
                 <a [routerLink]="['/descriptions']"><button (click)="createProfile(person)" type="button" class="chooseProfilButton my-3">Choose this profile</button></a>
                 <img [src]="person.photos[0]" height="250" class="card-img-top" alt="photo du profil">
@@ -62,7 +60,6 @@
                 <p>Number eyes : {{person.nberEyes}}</p>
               </div>
             </div>
-          </div>
         </div>
       </div>
       <!-- <div class="item {{person.name}}">

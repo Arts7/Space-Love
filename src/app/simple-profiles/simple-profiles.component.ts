@@ -68,39 +68,37 @@ export class SimpleProfilesComponent implements OnInit {
 
   rotate(e: string): void {
     if (e == "n") {
-      this.currdeg = this.currdeg - 60;
+      this.currdeg = this.currdeg - 120;
     }
     if (e == "p") {
-      this.currdeg = this.currdeg + 60;
+      this.currdeg = this.currdeg + 120;
     }
     this.updateRotation = true;
-    let item1 = document.querySelector(".Arfgrugnugnu").parentNode as HTMLElement;
-    let item2 = document.querySelector(".Golsurg").parentNode as HTMLElement;
-    let item3 = document.querySelector(".Boulerpion").parentNode as HTMLElement;
+    let item1 = document.querySelector('*[data-index="0"]').parentNode as HTMLElement;
+    let item2 = document.querySelector('*[data-index="1"]').parentNode as HTMLElement;
+    let item3 = document.querySelector('*[data-index="2"]').parentNode as HTMLElement;
+
+    
 
     item1.style.zIndex = "100";
     item2.style.zIndex = "100";
     item3.style.zIndex = "100";
-    
+
 
 
     let val = Math.abs(this.currdeg) % 360;
 
     if (val == 0){
-      item1.style.zIndex = "200";
-      //item1.style.opacity = "1.0";
-    }
-
-    if (val == 240){
-      item2.style.zIndex = "200";
-      // item2.style.opacity = "1.0";
+      item3.style.zIndex = "200";
     }
 
     if (val == 120){
-      item3.style.zIndex = "200";
-      // item3.style.opacity = "1.0";
+      item2.style.zIndex = "200";
     }
 
+    if (val == 240){
+      item1.style.zIndex = "200";
+    }
 
 
   }
