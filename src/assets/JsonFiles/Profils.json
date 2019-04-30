@@ -59,7 +59,7 @@
     "name":"Monomomgui",
     "sexe":"male",
     "nberEyes":1,
-    "typeSkin":"",    
+    "typeSkin":"smooth",    
     "job":"",
     "description":"",
     "photos":["../assets/img/Rperso_8-1.jpg", "../assets/img/Rperso_8-2.jpg"]
