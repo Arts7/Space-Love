@@ -3,6 +3,8 @@ import { PersonProfilesService } from '../person-profiles.service';
 import { Person } from '../person';
 import { Router } from '@angular/router';
 import { CarouselProfileService } from '../carousel-profile.service';
+import { PlanetService } from "../planet.service";
+import { Planet } from "../planet";
 
 @Component({
   selector: 'app-simple-profiles',
@@ -19,7 +21,11 @@ export class SimpleProfilesComponent implements OnInit {
 
   public profils: Person[];
 
-  constructor(private myService: PersonProfilesService) {
+  public planets: Planet[];
+
+  constructor(private myplanetService: PlanetService, private myService: PersonProfilesService) {
+
+    this.planets = [];
 
     this.updateRotation = false;
     // this.carousel = document.querySelector(".carouselSlide");
@@ -28,17 +34,23 @@ export class SimpleProfilesComponent implements OnInit {
     // this.prevButton = document.querySelector(".prev");
 
     this.profils = [];
+    
+}     
 
-    this.myService.getProfils().subscribe(
+  ngOnInit() { 
+this.myService.getProfils().subscribe(
       (param_profils: Person[]) => {
         this.profils = param_profils;
       }
-    )
-  }
+      );  
 
-  ngOnInit() {
-  }
+  this.myplanetService.getPlanets().subscribe(
+    (paramPlanets: Planet[]) => {
+      this.planets = paramPlanets;
+    }
+  );
 
+  }
 
   rotate(e: string): void {
     if (e == "n") {
