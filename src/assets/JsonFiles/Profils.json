@@ -14,7 +14,7 @@
     "id":2,
     "name":"Boulerpion",
     "sexe":"Male",
-    "nberEyes":5,
+    "nberEyes":3,
     "typeSkin":"Smooth",       
     "job":"Eyebrows Hairdresser",
     "description":"",
@@ -25,12 +25,13 @@
     "id":3,
     "name":"Arfgrugnugnu",
     "sexe":"Male",
-    "nberEyes":4,
+    "nberEyes":3,
     "typeSkin":"Smooth",       
     "job":"Crater Corker",
     "description":"",
     "photos":["../assets/img/Rperso_4-1.jpg"]
 },
+
 
 {
     "id":4,
