@@ -59,9 +59,7 @@ export class PlanetComponent implements OnInit, OnDestroy {
       (paramPlanets: Planet[]) => {
         this.planets = paramPlanets;
         
-        this.mapServ.createScene(this.canEleId, this.planetSearchIndex);
-        this.mapServ.animate();
-        
+
         
         // this.canvas = <HTMLCanvasElement>document.getElementById(this.canEleId);
         // this.canvas.addEventListener("mousedown", this.mapServ.onDocumentMouseDown, false);
@@ -71,6 +69,9 @@ export class PlanetComponent implements OnInit, OnDestroy {
       }
     );
 
+            
+    this.mapServ.createScene(this.canEleId, this.planetSearchIndex);
+    this.mapServ.animate();
 
   }
 

@@ -7,7 +7,7 @@
     "typeSkin":"Smooth",    
     "job":"School Shuttle Monitor",
     "description":"",
-    "photos":["../assets/img/Rperso_1-1.jpg", "../assets/img/Rperso_1-2.jpg"]
+    "photos":["./assets/img/Rperso_1-1.jpg", "./assets/img/Rperso_1-2.jpg"]
 },
 
 {
@@ -18,7 +18,7 @@
     "typeSkin":"Smooth",       
     "job":"Eyebrows Hairdresser",
     "description":"",
-    "photos":["../assets/img/Rperso_10-1.jpeg", "../assets/img/Rperso_10-2.jpg", "../assets/img/Rperso_10-3.jpg"]
+    "photos":["./assets/img/Rperso_10-1.jpeg", "./assets/img/Rperso_10-2.jpg", "./assets/img/Rperso_10-3.jpg"]
 },
 
 {
@@ -29,7 +29,7 @@
     "typeSkin":"Smooth",       
     "job":"Crater Corker",
     "description":"",
-    "photos":["../assets/img/Rperso_4-1.jpg"]
+    "photos":["./assets/img/Rperso_4-1.jpg"]
 },
 
 {
@@ -40,7 +40,7 @@
     "typeSkin":"Reptile",    
     "job":"Night Watchman",
     "description":"",
-    "photos":["../assets/img/Rperso_6-1.jpg"]
+    "photos":["./assets/img/Rperso_6-1.jpg"]
 },
 
 {
@@ -51,7 +51,7 @@
     "typeSkin":"Smooth",    
     "job":"",
     "description":"",
-    "photos":["../assets/img/Rperso_7-1.jpg", "../assets/img/Rperso_7-2.jpg", "../assets/img/Rperso_7-3.jpg", "../assets/img/Rperso_7-4.jpg"]
+    "photos":["./assets/img/Rperso_7-1.jpg", "./assets/img/Rperso_7-2.jpg", "./assets/img/Rperso_7-3.jpg", "./assets/img/Rperso_7-4.jpg"]
 },
 
 {
@@ -62,7 +62,7 @@
     "typeSkin":"Smooth",       
     "job":"Oxygen Tube Designer",
     "description":"",
-    "photos":["../assets/img/Rperso_8-1.jpg", "../assets/img/Rperso_8-2.jpg"]
+    "photos":["./assets/img/Rperso_8-1.jpg", "./assets/img/Rperso_8-2.jpg"]
 },
 
 {
@@ -73,7 +73,7 @@
     "typeSkin":"Smooth",    
     "job":"",
     "description":"",
-    "photos":["../assets/img/Rperso_9-1.jpg", "../assets/img/Rperso_9-2.jpg", "../assets/img/Rperso_9-3.jpg", "../assets/img/Rperso_9-4.jpg"]
+    "photos":["./assets/img/Rperso_9-1.jpg", "./assets/img/Rperso_9-2.jpg", "./assets/img/Rperso_9-3.jpg", "./assets/img/Rperso_9-4.jpg"]
 },
 
 {
@@ -84,7 +84,7 @@
     "typeSkin":"Smooth",    
     "job":"Actor",
     "description":"",
-    "photos":["../assets/img/Rperso_11-1.jpg", "../assets/img/Rperso_11-2.jpg"]
+    "photos":["./assets/img/Rperso_11-1.jpg", "./assets/img/Rperso_11-2.jpg"]
 },
 
 {
@@ -95,6 +95,6 @@
     "typeSkin":"Fish",    
     "job":"Mermaid",
     "description":"",
-    "photos":["../assets/img/Rperso_12-1.jpg"]
+    "photos":["./assets/img/Rperso_12-1.jpg"]
 }
 ]
