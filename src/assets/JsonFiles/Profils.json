@@ -56,7 +56,7 @@
 
 {
     "id":6,
-    "name":"Monomome",
+    "name":"Monomomgui",
     "sexe":"male",
     "nberEyes":1,
     "typeSkin":"",    
@@ -67,7 +67,7 @@
 
 {
     "id":7,
-    "name":"Mylimoon",
+    "name":"Mylisoon",
     "sexe":"female",
     "nberEyes":1,
     "typeSkin":"smooth",    
@@ -85,5 +85,16 @@
     "job":"Actor",
     "description":"",
     "photos":["../assets/img/Rperso_11-1.jpg", "../assets/img/Rperso_11-2.jpg"]
+},
+
+{
+    "id":9,
+    "name":"Fietteoffish",
+    "sexe":"female",
+    "nberEyes":3,
+    "typeSkin":"fish",    
+    "job":"Mermaid",
+    "description":"",
+    "photos":["../assets/img/Rperso_12-1.jpg"]
 }
 ]
