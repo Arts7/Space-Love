@@ -1,0 +1,67 @@
+[
+{
+    "id":1,
+    "name":"Golsurg",
+    "sexe":"Male",
+    "nberEyes":3,
+    "typeSkin":"Smooth",    
+    "job":"School Shuttle Monitor",
+    "description":"",
+    "photos":["./assets/img/Rperso_1-1.jpg", "./assets/img/Rperso_1-2.jpg"]
+},
+
+{
+    "id":2,
+    "name":"Boulerpion",
+    "sexe":"Male",
+    "nberEyes":3,
+    "typeSkin":"Smooth",       
+    "job":"Eyebrows Hairdresser",
+    "description":"",
+    "photos":["./assets/img/Rperso_10-1.jpeg", "./assets/img/Rperso_10-2.jpg", "./assets/img/Rperso_10-3.jpg"]
+},
+
+{
+    "id":3,
+    "name":"Arfgrugnugnu",
+    "sexe":"Male",
+    "nberEyes":3,
+    "typeSkin":"Smooth",       
+    "job":"Crater Corker",
+    "description":"",
+    "photos":["./assets/img/Rperso_4-1.jpg"]
+},
+{
+    "id":4,
+    "name":"Mylisoon",
+    "sexe":"Female",
+    "nberEyes":1,
+    "typeSkin":"Smooth",    
+    "job":"Crater Corker",
+    "description":"",
+    "photos":["./assets/img/Rperso_9-1.jpg", "./assets/img/Rperso_9-2.jpg", "./assets/img/Rperso_9-3.jpg", "./assets/img/Rperso_9-4.jpg"]
+},
+
+{
+    "id":5,
+    "name":"Cecilium",
+    "sexe":"Female",
+    "nberEyes":2,
+    "typeSkin":"Smooth",    
+    "job":"Actor",
+    "description":"",
+    "photos":["../assets/img/Rperso_13-1.jpg"]
+
+},
+
+{
+    "id":6,
+    "name":"Fietteoffish",
+    "sexe":"Female",
+    "nberEyes":3,
+    "typeSkin":"smooth",    
+    "job":"Mermaid",
+    "description":"",
+    "photos":["./assets/img/Rperso_12-1.jpg"]
+}
+]
