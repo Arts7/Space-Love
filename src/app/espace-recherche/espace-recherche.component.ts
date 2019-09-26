@@ -11,7 +11,7 @@ import { critereList } from '../critere';
 })
 export class EspaceRechercheComponent implements OnInit, OnDestroy {
 
-  private displayDiagnostic = false;
+  public displayDiagnostic = false;
   public critereList = critereList;
   
   
